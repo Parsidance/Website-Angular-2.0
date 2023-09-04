@@ -11,7 +11,14 @@ import { LineupComponent } from './lineup/lineup.component';
 import { SponsersComponent } from './sponsers/sponsers.component';
 import { AboutComponent } from './about/about.component';
 
+import { HeaderComponent } from './components/header/header.component';
+
 import { ButtonModule } from 'primeng/button';
+import { ToolbarModule } from 'primeng/toolbar';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -21,12 +28,14 @@ import { ButtonModule } from 'primeng/button';
     LineupComponent,
     SponsersComponent,
     AboutComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ButtonModule
+    ButtonModule,
+    ToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

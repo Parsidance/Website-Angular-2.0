@@ -1,0 +1,23 @@
+::ng-deep .p-toolbar {
+    background-color: white !important;
+    border: none;
+    box-shadow: none;
+}
+
+.p-toolbar-group-left h1 {
+    margin: 0;
+  }
+  
+  .p-toolbar-group-right {
+    .nav-link {
+      margin-right: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit; // any color
+      font-size: 1em;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
