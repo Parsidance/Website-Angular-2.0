@@ -9,8 +9,8 @@
 
 <div class="marquee-container">
     <span class="marquee-text">
-        <ng-container *ngFor="let artist of artists; let last = last">
-            <span class="artist-name">{{ artist }}</span><ng-container *ngIf="!last"> </ng-container>
+        <ng-container *ngFor="let artist of artists;">
+            <span class="artist-name">{{ artist }}</span><ng-container > </ng-container>
         </ng-container>
     </span>
 </div>
