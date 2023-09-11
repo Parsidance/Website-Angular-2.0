@@ -14,4 +14,7 @@ export class HomeComponent {
     { url: 'assets/main_stage.jpg' },
 
   ];
+
+  artists: string[] = ['Artist 1', 'Artist 2', 'Artist 3', 'Artist 4'];
+
 }
