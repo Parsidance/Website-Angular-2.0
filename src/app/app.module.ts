@@ -16,6 +16,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { ButtonModule } from 'primeng/button';
 import { ToolbarModule } from 'primeng/toolbar';
 
+import { CarouselModule } from 'primeng/carousel';
+
 
 
 
@@ -35,7 +37,8 @@ import { ToolbarModule } from 'primeng/toolbar';
     AppRoutingModule,
     BrowserAnimationsModule,
     ButtonModule,
-    ToolbarModule
+    ToolbarModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

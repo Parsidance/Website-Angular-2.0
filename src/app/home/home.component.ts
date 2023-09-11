@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   images: any[] = [
-    { url: 'path/to/your/image1.jpg' },
-    { url: 'path/to/your/image2.jpg' },
-    { url: 'path/to/your/image3.jpg' },
-    // ... add more images as needed
+    { url: 'assets/home-1.jpg' },
+    { url: 'assets/Bunker.jpg' },
+    { url: 'assets/home-4.jpg' },
+    { url: 'assets/home-7.jpg' },
+    { url: 'assets/main_stage.jpg' },
+
   ];
 }
