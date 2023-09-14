@@ -14,3 +14,10 @@
         </ng-container>
     </span>
 </div>
+
+<p-carousel class="custom-carousel" [value]="logos" [numVisible]="8" [numScroll]="1" [circular]="true" [autoplayInterval]="2000">
+    <ng-template let-logo pTemplate="item">
+      <img [src]="logo.url" [alt]="logo.alt" style="display: block; margin: 0 auto; width: 100px; height: auto;">
+    </ng-template>
+  </p-carousel>
+  
