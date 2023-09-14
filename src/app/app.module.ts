@@ -17,6 +17,7 @@ import { ButtonModule } from 'primeng/button';
 import { ToolbarModule } from 'primeng/toolbar';
 
 import { CarouselModule } from 'primeng/carousel';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -30,7 +31,8 @@ import { CarouselModule } from 'primeng/carousel';
     LineupComponent,
     SponsersComponent,
     AboutComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
