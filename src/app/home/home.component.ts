@@ -18,7 +18,7 @@ export class HomeComponent {
   artists: string[] = ['USED' , 'Amber Broos', 'Eagl', 'Skyve ft Flo Windey', 'BLVCKPRINT', 'Séa', 'De Bromeo\'s ', 'Bassbrain', 'TDB'];
 
   logos = [
-    {url: 'assets/oLogos/beeuwsaert.png', alt: 'Beeuwsaert'},
+    {url: 'assets/sponsorLogos/beeuwsaert.png', alt: 'Beeuwsaert'},
     {url: 'assets/sponsorLogos/maselis.png', alt: 'Maselis'},
     {url: 'test', alt: 'Lunette'},
     {url: 'test', alt: 'test2'},
