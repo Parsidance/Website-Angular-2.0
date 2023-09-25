@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { InfoComponent } from './info/info.component';
 import { LineupComponent } from './lineup/lineup.component';
-import { SponsersComponent } from './sponsers/sponsers.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
 import { AboutComponent } from './about/about.component';
 
 import { HeaderComponent } from './components/header/header.component';
@@ -29,7 +29,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeComponent,
     InfoComponent,
     LineupComponent,
-    SponsersComponent,
+    SponsorsComponent,
     AboutComponent,
     HeaderComponent,
     FooterComponent
