@@ -5,6 +5,7 @@ import { InfoComponent } from './info/info.component';
 import { LineupComponent } from './lineup/lineup.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { AboutComponent } from './about/about.component';
+import { AftermovieComponent } from './aftermovie/aftermovie.component';
 
 
 
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'lineup', component: LineupComponent },
   { path: 'sponsors', component: SponsorsComponent },
   { path: 'about-parsidance', component: AboutComponent },
+  { path: 'aftermovie', component: AftermovieComponent },
   { path: '*', component: HomeComponent }
 ];
 
