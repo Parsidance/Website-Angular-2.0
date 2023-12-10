@@ -31,6 +31,6 @@ Elke push op de `production`-branch wordt automatisch geüpload naar [parsidance
 
 Op de `production`-branch staat er een beveiliging waardoor er sowieso eerst een Pull Request moet aangemaakt worden vooraleer er kan gemerged worden.
 
-### Parsidance IT team
+## Parsidance IT team
 
 Wannes, Michiel, Brecht en Louis
