@@ -17,6 +17,20 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0. 
 
+## Deployment
+
+### Dev ~ branch: main
+
+Elke push op de `main`-branch wordt automatisch geüpload naar [dev.parsidance.be](https://dev.parsidance.be) met behulp van FTP. Script hiervoor staat in `.github/workflows/dev-deploy-OVH.yaml`.
+
+Naar de `main`-branch kan er gemerged worden zonder enige beveiliging
+
+## Productie ~ branch: production
+
+Elke push op de `production`-branch wordt automatisch geüpload naar [parsidance.be](https://parsidance.be) met behulp van FTP. Script hiervoor staat in `.github/workflows/prod-deploy-OVH.yaml`
+
+Op de `production`-branch staat er een beveiliging waardoor er sowieso eerst een Pull Request moet aangemaakt worden vooraleer er kan gemerged worden.
+
 ### Parsidance IT team
 
 Wannes, Michiel, Brecht en Louis
