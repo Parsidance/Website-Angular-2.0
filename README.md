@@ -25,7 +25,7 @@ Elke push op de `main`-branch wordt automatisch geüpload naar [dev.parsidance.b
 
 Naar de `main`-branch kan er gemerged worden zonder enige beveiliging
 
-## Productie ~ branch: production
+### Productie ~ branch: production
 
 Elke push op de `production`-branch wordt automatisch geüpload naar [parsidance.be](https://parsidance.be) met behulp van FTP. Script hiervoor staat in `.github/workflows/prod-deploy-OVH.yaml`
 
