@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
+import { routeTransition } from '../animations';
 import { ButtonModule } from 'primeng/button';
+import { Router } from '@angular/router'; // Import the Router
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  animations: [routeTransition],
 })
 
 export class HomeComponent {
+  constructor(private router: Router) {} // Inject the Router
   images: any[] = [
     { url: 'assets/homepage/home-1.jpg' },
     { url: 'assets/homepage/Bunker.jpg' },
@@ -31,4 +35,5 @@ export class HomeComponent {
     {url: 'test', alt: 'test7'},
     {url: 'test', alt: 'test8'},
   ]
+
 }

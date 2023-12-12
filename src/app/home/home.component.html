@@ -22,7 +22,7 @@
   </p-carousel>
    -->
 
-   <div style="width: 100%; height: 100%;">
+   <div style="width: 100%; height: 100%;" [@routeTransition]>
         <div>
             <!--<h1 class="parsidanceLogo">parsidance<span style="font-size: 10px;">&copy;</span></h1>-->
             <img class="parsidanceLogo" src="../../assets/svg/Parsidance.svg">
@@ -41,8 +41,9 @@
         </div>
 
         <div style="text-align: center;">
-            <a><i class="arrow down" routerLink="/aftermovie"></i></a>
-        </div>
+            <a routerLink="/aftermovie"><i class="arrow down"></i></a>
+          </div>
+          
         
    </div>
 
