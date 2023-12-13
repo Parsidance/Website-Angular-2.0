@@ -22,29 +22,50 @@
   </p-carousel>
    -->
 
-   <div style="width: 100%; height: 100%;">
-        <div>
-            <!--<h1 class="parsidanceLogo">parsidance<span style="font-size: 10px;">&copy;</span></h1>-->
-            <img class="parsidanceLogo" src="../../assets/svg/Parsidance.svg">
-            <p class="subtitleLogo">Friday 12.04.2024 - Saturday 13.04.2024</p>
-        </div>
-
-        <div>
-            <img class="parsidancePD" src="../../assets/svg/pd.svg">
-        </div>
-        
-        <div>
-            <a href="https://youtube.com">
-                <!-- <button pButton label="Tickets" icon="pi pi-ticket" [ngStyle]="{'background-color':'white', 'color':'black', 'border': '0px'}" class="ticketButton"></button> -->
-                <button pButton label="Tickets" icon="pi pi-ticket"  class="ticketButton"></button>
-            </a>
-        </div>
-
-        <div style="text-align: center;">
-            <a><i class="arrow down" routerLink="/aftermovie"></i></a>
-        </div>
-        
+   <div class="ticketBanner">
+        <div class="ticketButton">
+            <a href="https://youtube.com" class="ticketButton">TICKETS</a>
+            <hr class="ticketButton">
+        </div >
    </div>
 
+    <div class="parsidanceLogo">
+        <a href="./">
+            <img class="parsidanceLogo" src="../../assets/svg/Parsidance.svg">
+        </a>
+        <p class="subtitleLogo">Friday 12.04.2024 - Saturday 13.04.2024</p>
+    </div>
 
-  <!-- <app-footer></app-footer> -->
+   <div class="countdown">
+        <p class="countdown">Ticket sale starts in</p>
+        <div id="flipdown" class="flipdown"></div>
+    </div>
+
+    <div class="chevronDown" (click)="goToAftermovie()">
+        <fa-icon [icon]="['fas', 'chevron-down']" animation="bounce" size="3x" style="color: white"></fa-icon>
+    </div>
+
+    <!-- <div id="aftermovie" class="aftermovie">
+        <p class="aftermovie">Aftermovie 2023</p>
+        <iframe class="aftermovie" src="https://www.youtube.com/embed/K4ZIGFugXco?autoplay=1&mute=1&controls=0" title="PARSIDANCE 2023 | Official Aftermovie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div> -->
+
+    <div id="aftermovie" class="aftermovie">       
+        <!-- web -->
+        <video id="promovidSquare" class="aftermovie" [autoplay]=true [muted]=true>
+            <source src="../../assets/promoVids/promovid_square.mp4" type="video/mp4">
+            Your browser does not support the video tag.    
+        </video>
+
+        <!-- mobile -->
+        <video id="promovidVertical" class="aftermovie" [autoplay]=true [muted]=true>
+            <source src="../../assets/promoVids/promovid_vertical.mp4" type="video/mp4">
+            Your browser does not support the video tag.    
+        </video>
+    </div>
+
+<!-- <footer>
+    <div>
+        
+    </div>
+</footer> -->
