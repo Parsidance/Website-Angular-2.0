@@ -31,6 +31,24 @@ Elke push op de `production`-branch wordt automatisch geüpload naar [parsidance
 
 Op de `production`-branch staat er een beveiliging waardoor er sowieso eerst een Pull Request moet aangemaakt worden vooraleer er kan gemerged worden.
 
+## Kleuren
+
+  Hex code verkregen met behulp van de `Color Picker`uit [Powertoys](https://github.com/microsoft/PowerToys)
+
+- Paars: `#9a94c8`
+- Groen: `#458b6a`
+- Rood: `#d23f34`
+- Geel: `#e0e457`
+- Grijs: `#808285`
+- Wit: `#ffffff`
+- Zwart grijs: `#312f30`
+- Zwart: `#080302`
+
+## Gebruikte packages
+
+- [Flip Countdown](https://github.com/PButcher/flipdown). Nodige bestanden staan in `src/assets/flipdown` en zijn toegevoegd als *styles* en *scripts* in `angular.json`  
+- [Font Awesome](https://fontawesome.com/). Handig voor icons. Geïnstalleerd volgens [angular-fontawesome](https://github.com/FortAwesome/angular-fontawesome)
+
 ## Parsidance IT team
 
 Wannes, Michiel, Brecht en Louis
