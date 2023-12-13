@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ViewportScroller } from "@angular/common";
-import {YouTubePlayer} from '@angular/youtube-player';
 
 declare var FlipDown: any;
 
@@ -11,6 +10,8 @@ declare var FlipDown: any;
 })
 
 export class HomeComponent {
+  constructor(private scroller: ViewportScroller) {}
+
   images: any[] = [
     { url: 'assets/homepage/home-1.jpg' },
     { url: 'assets/homepage/Bunker.jpg' },
@@ -43,7 +44,6 @@ export class HomeComponent {
       {theme: "darkSelfMade",}).start();
   }
 
-  constructor(private scroller: ViewportScroller) {}
 
   goToAftermovie() {
     this.scroller.scrollToAnchor("aftermovie");
