@@ -160,12 +160,20 @@ p.countdown {
   text-align: start; 
 }
 
-div.chevronDown {
+div.chevronDown{
   position: absolute;
   top: 100vh;
   transform: translateY(-150%);
   left: calc(50% - 24px);
   cursor: pointer;
+}
+
+#chevronDownStill {
+  display: none;
+}
+
+#chevronDownBounce {
+  display: block;
 }
 
 div.aftermovie {
@@ -242,8 +250,19 @@ video.aftermovie {
   }
 
   div.chevronDown {
-    top: 95vh;
+    top: 90vh;
     transform: translateY(-180%);
+    left: calc(80% - 24px);
+    display: block;
+    cursor: pointer;
+  }
+
+  #chevronDownStill {
+    display: block;
+  }
+
+  #chevronDownBounce {
+    display: none;
   }
 
   #promovidSquare {
