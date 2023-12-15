@@ -1,71 +1,275 @@
-/*div {
-    display: flex;
-    justify-content: center; // For horizontal centering
-    align-items: center;     // For vertical centering
-    height: 100vh;           // Use the full viewport height
-    width: 100%;             // Use the full viewport width
-  }
-  */
+// ******* Vorige homepage *******
+// :host ::ng-deep .p-carousel {
+//   width: 85%;
+//   /* Adjust as needed */
+//   margin: 0 auto;
+//   margin-top: 1%;
+//   /* This will center the carousel horizontally */
+// }
+
+// :host ::ng-deep .p-carousel .p-carousel-content .p-carousel-item {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 75vh;
+// }
+
+// /* Hide the default navigation buttons */
+// :host ::ng-deep .custom-carousel .p-carousel .p-carousel-prev,
+// :host ::ng-deep .custom-carousel .p-carousel .p-carousel-next {
+//   display: none;
+// }
+
+// /* Hide the rectangle at the bottom of the carousel */
+// :host ::ng-deep .custom-carousel .p-carousel .p-carousel-indicators {
+//   display: none;
+// }
+
+// /* names of dj's that move */
+// .marquee-container {
+//   font-size: 1.5em;
+//   margin-top: 1.5%;
+//   margin-bottom: 1%;
+//   width: 100%;
+//   overflow: hidden;
+//   position: relative;
+//   background-color: #ffffff;
+//   /* Optional: add a background color */
+//   white-space: nowrap;
+//   /* Prevents the text from wrapping to the next line */
+// }
+
+// .marquee-text {
+//   display: inline-block;
+//   padding-left: 100%;
+//   /* Start position of the text */
+//   animation: marquee 15s linear infinite;
+//   /* Adjust the time (15s) as needed */
+// }
+
+// .artist-name {
+//   margin-right: 200px; /* Adjust as needed to control the spacing between artist names */
+// }
+
+// @keyframes marquee {
+//   from {
+//     transform: translateX(0);
+//   }
+
+//   to {
+//     transform: translateX(-100%);
+//   }
+// }
 
 
-:host ::ng-deep .p-carousel {
-  width: 85%;
-  /* Adjust as needed */
-  margin: 0 auto;
-  margin-top: 1%;
-  /* This will center the carousel horizontally */
+
+// ********* Huidige ticket homepage *********
+div.ticketBanner {
+  position: fixed;
+  top: 0px;
+  margin-bottom: 5%;
+
+  width: 100%; 
+
+  background-color: #080302;
+
+  z-index: 10;
 }
 
-:host ::ng-deep .p-carousel .p-carousel-content .p-carousel-item {
+div.ticketButton {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: end; 
+  margin-top: 2%;
+}
+
+a.ticketButton {
+  color: white;
+  text-decoration: none;
+  color: #FFF;
+  font-family: "SatoshiVariable-Bold";
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: end; 
+  top: 10%;
+}
+
+a.ticketButton:hover {
+  text-decoration: underline;
+  text-decoration-color: #458b6a;
+  text-decoration-thickness: 3px;
+}
+
+hr.ticketButton{
+  width: 90%;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+div.parsidanceLogo {
+  width: 70%;
+  height: 100%;
+  margin-top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+img.parsidanceLogo{
+  color: white;
+}
+
+p.subtitleLogo {
+  font-family: 'SatoshiVariable-Bold';
+  font-size: 15px;
+  color: white;
+  font-weight: 200;
+  text-align: end; 
+
+  display: block;
+  width: 100%;
+  text-align: end; 
+}
+
+div.countdown {
+  display: block;
+  width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30%;
+}
+
+p.countdown {
+  font-family: 'SatoshiVariable-Bold';
+  font-size: 15px;
+  color: white;
+  font-weight: 200;
+  text-align: start; 
+}
+
+div.chevronDown{
+  position: absolute;
+  top: 100vh;
+  transform: translateY(-150%);
+  left: calc(50% - 24px);
+  cursor: pointer;
+}
+
+#chevronDownStill {
+  display: none;
+}
+
+#chevronDownBounce {
+  display: block;
+}
+
+div.aftermovie {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
+
+  position: absolute;
+  top: 100vh;
+
+  width: 100%;
+  height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  flex-direction: column;
 }
 
-/* Hide the default navigation buttons */
-:host ::ng-deep .custom-carousel .p-carousel .p-carousel-prev,
-:host ::ng-deep .custom-carousel .p-carousel .p-carousel-next {
+p.aftermovie {
+  font-family: 'SatoshiVariable-Bold';
+  font-size: 25px;
+  color: white;
+  font-weight: 200;
+  text-align: center; 
+
+  margin-top: 8%;
+}
+
+// iframe.aftermovie {
+//   width: 70%;
+//   height: 70%;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+video.aftermovie {
+  width: 70%;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#promovidSquare {
+  display: block;
+}
+
+#promovidVertical {
   display: none;
 }
 
-/* Hide the rectangle at the bottom of the carousel */
-:host ::ng-deep .custom-carousel .p-carousel .p-carousel-indicators {
-  display: none;
-}
-
-/* names of dj's that move */
-.marquee-container {
-  font-size: 1.5em;
-  margin-top: 1.5%;
-  margin-bottom: 1%;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  background-color: #ffffff;
-  /* Optional: add a background color */
-  white-space: nowrap;
-  /* Prevents the text from wrapping to the next line */
-}
-
-.marquee-text {
-  display: inline-block;
-  padding-left: 100%;
-  /* Start position of the text */
-  animation: marquee 15s linear infinite;
-  /* Adjust the time (15s) as needed */
-}
-
-.artist-name {
-  margin-right: 200px; /* Adjust as needed to control the spacing between artist names */
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(0);
+// For mobile
+@media (max-width: 600px) {
+  div.parsidanceLogo{
+    margin-top: 5rem;
   }
 
-  to {
-    transform: translateX(-100%);
+  p.subtitleLogo {
+    font-size: 0.7rem;
+  }
+
+  p.countdown {
+    font-size: 0.7rem;
+  } 
+
+  div.countdown {
+    width: 200px;
+    margin-top: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  div.chevronDown {
+    top: 90vh;
+    transform: translateY(-180%);
+    left: calc(80% - 24px);
+    display: block;
+    cursor: pointer;
+  }
+
+  #chevronDownStill {
+    display: block;
+  }
+
+  #chevronDownBounce {
+    display: none;
+  }
+
+  #promovidSquare {
+    display: none;
+  }
+
+  #promovidVertical {
+    display: block;
   }
 }

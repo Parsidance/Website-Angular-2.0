@@ -18,10 +18,9 @@ import { ToolbarModule } from 'primeng/toolbar';
 
 import { CarouselModule } from 'primeng/carousel';
 import { FooterComponent } from './components/footer/footer.component';
-
-
-
-
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { VerkoopsvoorwaardenComponent } from './verkoopsvoorwaarden/verkoopsvoorwaarden.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +31,8 @@ import { FooterComponent } from './components/footer/footer.component';
     SponsorsComponent,
     AboutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    VerkoopsvoorwaardenComponent
   ],
   imports: [
     BrowserModule,
@@ -40,9 +40,16 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserAnimationsModule,
     ButtonModule,
     ToolbarModule,
-    CarouselModule
+    CarouselModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {   
+  constructor(library: FaIconLibrary) {
+    library.addIcons(
+      faChevronDown,
+    );
+  }
+}
