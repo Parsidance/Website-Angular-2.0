@@ -21,6 +21,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { VerkoopsvoorwaardenComponent } from './verkoopsvoorwaarden/verkoopsvoorwaarden.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { VerkoopsvoorwaardenComponent } from './verkoopsvoorwaarden/verkoopsvoor
     AboutComponent,
     HeaderComponent,
     FooterComponent,
-    VerkoopsvoorwaardenComponent
+    VerkoopsvoorwaardenComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
