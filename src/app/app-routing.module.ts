@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'about-parsidance', component: AboutComponent },
   { path: 'aftermovie', component: AftermovieComponent },
   { path: 'verkoopsvoorwaarden', component: VerkoopsvoorwaardenComponent },
-  { path: '*', component: HomeComponent }
+  { path: '**', component: HomeComponent }
 ];
 
 @NgModule({
