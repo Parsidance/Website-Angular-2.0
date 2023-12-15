@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:dev": "ng build --configuration development --base-href https://dev.parsidance.be --base-href https://www.dev.parsidance.be",
-    "build:prod": "ng build --configuration production --base-href https://parsidance.be --base-href https://www.parsidance.be",
+    "build:dev": "ng build --configuration development --base-href dev.parsidance",
+    "build:prod": "ng build --configuration production --base-href parsidance",
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless"
   },
   "private": true,
