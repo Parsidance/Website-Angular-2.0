@@ -1,9 +1,5 @@
 footer {
-  // position: absolute;
-  // top: 180vh;
-
   width: 100%;
-  // height: 10vh;
 }
 
 hr.footer {
@@ -58,9 +54,7 @@ fa-icon:hover {
 
 // For mobile
 @media (max-width: 600px) {
-  footer {
-    // position: absolute;
-    // top: 150vh;  
+  footer { 
     width: 100%;
   }
 
