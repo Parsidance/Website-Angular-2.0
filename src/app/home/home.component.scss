@@ -151,12 +151,10 @@ div.aftermovie {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-
-  position: absolute;
-  top: 100vh;
+  margin-top: 30vh;
 
   width: 100%;
-  height: 90vh;
+  height: 80vh;
 
   display: flex;
   justify-content: center;
@@ -221,9 +219,7 @@ video.aftermovie {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-  
-    position: absolute;
-    top: 70vh;
+    margin-top: 20vh;
   
     width: 100%;
     height: 80vh;
