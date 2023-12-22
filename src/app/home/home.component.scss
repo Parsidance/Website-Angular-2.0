@@ -63,129 +63,100 @@
 
 
 
-// ********* Huidige ticket homepage *********
-div.ticketBanner {
-  position: fixed;
-  top: 0px;
-  margin-bottom: 5%;
+// ********* COUNTDOWN *********
+// div.countdown {
+//   display: block;
+//   width: 520px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-top: 10px;
+//   margin-bottom: 10px;
+//   height: 30%;
+// }
 
-  width: 100%; 
+// p.countdown {
+//   font-family: 'SatoshiVariable-Bold';
+//   font-size: 15px;
+//   color: white;
+//   font-weight: 200;
+//   text-align: start; 
+// }
 
-  background-color: #080302;
-
-  z-index: 10;
-}
-
-div.ticketButton {
+// ********* CURRENT HOMEPAGE *********
+div.progressTickets {
   display: block;
-  width: 100%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
-  text-align: end; 
-  margin-top: 2%;
 }
 
-a.ticketButton {
-  color: white;
-  text-decoration: none;
-  color: #FFF;
-  font-family: "SatoshiVariable-Bold";
-  font-size: 1.875rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-
-  display: block;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: end; 
-  top: 10%;
-}
-
-a.ticketButton:hover {
-  text-decoration: underline;
-  text-decoration-color: #458b6a;
-  text-decoration-thickness: 3px;
-}
-
-hr.ticketButton{
-  width: 90%;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-div.parsidanceLogo {
-  width: 70%;
-  height: 100%;
-  margin-top: 7rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-img.parsidanceLogo{
-  color: white;
-}
-
-p.subtitleLogo {
+p.progressBarTitle {
   font-family: 'SatoshiVariable-Bold';
   font-size: 15px;
   color: white;
   font-weight: 200;
-  text-align: end; 
+  text-align: start;
+  margin-top: 70px;
+  margin-bottom: 5px;
+}
 
+div.progressBarContainer {
+  position: relative;
   display: block;
   width: 100%;
-  text-align: end; 
+  border-radius: 4px;
+  border: 4px solid white;
+  box-sizing: border-box;
 }
 
-div.countdown {
-  display: block;
-  width: 520px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height: 30%;
+div.progressBar {
+  height: 40px;
+  background-color: white;
+  transition: width 2s ease-in-out; /* Adjust the duration to match the animation time */
 }
 
-p.countdown {
+div.percentageLabel {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  transform: translate(50%, 50%);
+  font-weight: bold;
+  z-index: 1; 
+}
+
+div.percentageLabel.friday {
   font-family: 'SatoshiVariable-Bold';
   font-size: 15px;
-  color: white;
   font-weight: 200;
-  text-align: start; 
+  color: white;
 }
 
-div.chevronDown{
+div.percentageLabel.saturday {
+  font-family: 'SatoshiVariable-Bold';
+  font-size: 15px;
+  font-weight: 200;
+  color: black;
+}
+
+div.chevronDown {
   position: absolute;
   top: 100vh;
   transform: translateY(-150%);
   left: calc(50% - 24px);
   cursor: pointer;
-}
-
-#chevronDownStill {
-  display: none;
-}
-
-#chevronDownBounce {
   display: block;
 }
 
 div.aftermovie {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 75px;
+  margin-bottom: 10px;
 
   position: absolute;
   top: 100vh;
 
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 
   display: flex;
   justify-content: center;
@@ -202,13 +173,6 @@ p.aftermovie {
 
   margin-top: 8%;
 }
-
-// iframe.aftermovie {
-//   width: 70%;
-//   height: 70%;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
 
 video.aftermovie {
   width: 70%;
@@ -227,42 +191,47 @@ video.aftermovie {
 
 // For mobile
 @media (max-width: 600px) {
-  div.parsidanceLogo{
-    margin-top: 5rem;
+  // ********* COUNTDOWN *********
+  // p.countdown {
+  //   font-size: 0.7rem;
+  // } 
+
+  // div.countdown {
+  //   width: 200px;
+  //   margin-top: 5%;
+
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column;
+  // }
+
+  // ********* CURRENT HOMEPAGE *********
+
+  div.progressTickets {
+    margin-top: 30%;
+
   }
 
-  p.subtitleLogo {
-    font-size: 0.7rem;
+  div.chevronDown {
+    display: none;
   }
 
-  p.countdown {
-    font-size: 0.7rem;
-  } 
-
-  div.countdown {
-    width: 200px;
-    margin-top: 5%;
-
+  div.aftermovie {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  
+    position: absolute;
+    top: 70vh;
+  
+    width: 100%;
+    height: 80vh;
+  
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-
-  div.chevronDown {
-    top: 90vh;
-    transform: translateY(-180%);
-    left: calc(80% - 24px);
-    display: block;
-    cursor: pointer;
-  }
-
-  #chevronDownStill {
-    display: block;
-  }
-
-  #chevronDownBounce {
-    display: none;
   }
 
   #promovidSquare {

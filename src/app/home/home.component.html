@@ -1,58 +1,53 @@
-<!-- <app-header></app-header> -->
+<app-header></app-header>
 <!-- 
-<p-carousel class="custom-carousel" [value]="images" [numVisible]="1" [numScroll]="1" [circular]="true"
-    [autoplayInterval]="4000">
-    <ng-template let-image pTemplate="item">
-        <img [src]="image.url" alt="Image description" style="width: 100%; height: auto;">
-    </ng-template>
-</p-carousel>
+    <p-carousel class="custom-carousel" [value]="images" [numVisible]="1" [numScroll]="1" [circular]="true"
+        [autoplayInterval]="4000">
+        <ng-template let-image pTemplate="item">
+            <img [src]="image.url" alt="Image description" style="width: 100%; height: auto;">
+        </ng-template>
+    </p-carousel>
 
-<div class="marquee-container">
-    <span class="marquee-text">
-        <ng-container *ngFor="let artist of artists;">
-            <span class="artist-name">{{ artist }}</span>
-        </ng-container>
-    </span>
-</div>
+    <div class="marquee-container">
+        <span class="marquee-text">
+            <ng-container *ngFor="let artist of artists;">
+                <span class="artist-name">{{ artist }}</span>
+            </ng-container>
+        </span>
+    </div>
 
-<p-carousel class="custom-carousel" [value]="logos" [numVisible]="8" [numScroll]="1" [circular]="true" [autoplayInterval]="2000">
+    <p-carousel class="custom-carousel" [value]="logos" [numVisible]="8" [numScroll]="1" [circular]="true" [autoplayInterval]="2000">
     <ng-template let-logo pTemplate="item">
       <img [src]="logo.url" [alt]="logo.alt" style="display: block; margin: 0 auto; width: 100px; height: auto;">
     </ng-template>
-  </p-carousel>
-   -->
+  </p-carousel> 
+-->
 
-   <div class="ticketBanner">
-        <div class="ticketButton">
-            <a href="https://tickets.parsidance.be" class="ticketButton">TICKETS</a>
-            <hr class="ticketButton">
-        </div >
-   </div>
-
-    <div class="parsidanceLogo">
-        <a href="./">
-            <img class="parsidanceLogo" src="../../assets/svg/Parsidance.svg">
-        </a>
-        <p class="subtitleLogo">Friday 12.04.2024 - Saturday 13.04.2024</p>
-    </div>
-
-   <div class="countdown">
+   
+<!-- 
+    <div class="countdown">
         <p class="countdown">Ticket sale starts in</p>
         <div id="flipdown" class="flipdown"></div>
-    </div>
+    </div> 
+-->
 
-    <div id="chevronDownBounce" class="chevronDown" (click)="goToAftermovie()">
+    <div class="progressTickets">
+        <p class="progressBarTitle">Friday sold out for</p>
+        <div class="progressBarContainer">
+            <div class="progressBar" [style.width.%]="progressFriday"></div>
+            <div class="percentageLabel friday">{{progressFriday}}%</div>
+        </div>
+
+        <p class="progressBarTitle">Saturday sold out for</p>
+        <div class="progressBarContainer">
+            <div class="progressBar" [style.width.%]="progressSaturday"></div>
+            <div class="percentageLabel saturday">{{progressSaturday}}%</div>            
+        </div>
+    </div>
+    
+
+    <div class="chevronDown" (click)="goToAftermovie()">
         <fa-icon [icon]="['fas', 'chevron-down']" animation="bounce" size="3x" style="color: white"></fa-icon>
     </div>
-
-    <!-- <div id="chevronDownStill" class="chevronDown" (click)="goToAftermovie()">
-        <fa-icon [icon]="['fas', 'chevron-down']" size="3x" style="color: white"></fa-icon>
-    </div> -->
-
-    <!-- <div id="aftermovie" class="aftermovie">
-        <p class="aftermovie">Aftermovie 2023</p>
-        <iframe class="aftermovie" src="https://www.youtube.com/embed/K4ZIGFugXco?autoplay=1&mute=1&controls=0" title="PARSIDANCE 2023 | Official Aftermovie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div> -->
 
     <div id="aftermovie" class="aftermovie">       
         <!-- web -->
@@ -68,8 +63,4 @@
         </video>
     </div>
 
-<!-- <footer>
-    <div>
-        
-    </div>
-</footer> -->
+<app-footer></app-footer>

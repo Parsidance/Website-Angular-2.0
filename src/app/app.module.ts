@@ -19,8 +19,10 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { CarouselModule } from 'primeng/carousel';
 import { FooterComponent } from './components/footer/footer.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { VerkoopsvoorwaardenComponent } from './verkoopsvoorwaarden/verkoopsvoorwaarden.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
+import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { VerkoopsvoorwaardenComponent } from './verkoopsvoorwaarden/verkoopsvoor
     AboutComponent,
     HeaderComponent,
     FooterComponent,
-    VerkoopsvoorwaardenComponent
+    VerkoopsvoorwaardenComponent,
+    PrivacypolicyComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,7 @@ import { VerkoopsvoorwaardenComponent } from './verkoopsvoorwaarden/verkoopsvoor
     ButtonModule,
     ToolbarModule,
     CarouselModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -50,6 +53,10 @@ export class AppModule {
   constructor(library: FaIconLibrary) {
     library.addIcons(
       faChevronDown,
+      faFacebook,
+      faInstagram,
+      faYoutube,
+      faEnvelope
     );
   }
 }
