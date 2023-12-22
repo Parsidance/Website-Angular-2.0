@@ -5,20 +5,16 @@ import { InfoComponent } from './info/info.component';
 import { LineupComponent } from './lineup/lineup.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { AboutComponent } from './about/about.component';
-import { AftermovieComponent } from './aftermovie/aftermovie.component';
 import { VerkoopsvoorwaardenComponent } from './verkoopsvoorwaarden/verkoopsvoorwaarden.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 
 
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'info', component: InfoComponent },
-  { path: 'lineup', component: LineupComponent },
-  { path: 'sponsors', component: SponsorsComponent },
-  { path: 'about-parsidance', component: AboutComponent },
-  { path: 'aftermovie', component: AftermovieComponent },
   { path: 'verkoopsvoorwaarden', component: VerkoopsvoorwaardenComponent },
+  { path: 'privacypolicy', component: PrivacypolicyComponent },
   { path: '**', component: HomeComponent }
 ];
 
