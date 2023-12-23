@@ -1,11 +1,11 @@
-.verkoopsvoorwaarden {
+.privacyPolicy {
     font-family: 'SatoshiVariable-Bold';
     font-size: 1rem;
     color: white;
     text-align: left; 
 }
 
-div.verkoopsvoorwaarden {
+div.privacyPolicy {
     display: block;
     width: 50%;
     margin-left: auto;
@@ -14,14 +14,14 @@ div.verkoopsvoorwaarden {
     padding-bottom: 75px;
 }
 
-h1.verkoopsvoorwaarden {
+h1.privacyPolicy {
     font-family: 'SatoshiVariable-Bold';
     font-size: 1.875rem;
     color: white;
     text-align: center; 
 }
 
-li.verkoopsvoorwaarden {
+li.privacyPolicy {
     font-family: 'SatoshiVariable-Bold';
     font-size: 1rem;
     color: white;
@@ -31,11 +31,11 @@ li.verkoopsvoorwaarden {
 }
 
 @media (max-width: 600px) {
-    div.verkoopsvoorwaarden {
+    div.privacyPolicy {
         width: 90%;
     }
 
-    h1.verkoopsvoorwaarden {
+    h1.privacyPolicy {
         font-size: 1.5rem;
     }
 }

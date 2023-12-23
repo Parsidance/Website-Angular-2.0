@@ -1,23 +1,113 @@
-::ng-deep .p-toolbar {
-    background-color: white !important;
-    border: none;
-    box-shadow: none;
+// ::ng-deep .p-toolbar {
+//     background-color: white !important;
+//     border: none;
+//     box-shadow: none;
+// }
+
+// .p-toolbar-group-left h1 {
+//     margin: 0;
+//   }
+  
+//   .p-toolbar-group-right {
+//     .nav-link {
+//       margin-right: 1em;
+//       cursor: pointer;
+//       text-decoration: none;
+//       color: inherit; // any color
+//       font-size: 1em;
+  
+//       &:hover {
+//         text-decoration: underline;
+//       }
+//     }
+//   }
+
+div.ticketBanner {
+  position: fixed;
+  top: 0px;
+  margin-bottom: 5%;
+
+  width: 100%; 
+
+  background-color: #080302;
+
+  z-index: 10;
 }
 
-.p-toolbar-group-left h1 {
-    margin: 0;
+div.ticketButton {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: end; 
+  margin-top: 2%;
+}
+
+a.ticketButton {
+  color: white;
+  text-decoration: none;
+  color: #FFF;
+  font-family: "SatoshiVariable-Bold";
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: end; 
+  top: 10%;
+}
+
+a.ticketButton:hover {
+  text-decoration: underline;
+  text-decoration-color: #458b6a;
+  text-decoration-thickness: 3px;
+}
+
+hr.ticketButton {
+  width: 90%;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+div.parsidanceLogo {
+  width: 70%;
+  height: 30%;
+  margin-top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+img.parsidanceLogo{
+  color: white;
+}
+
+p.subtitleLogo {
+  font-family: 'SatoshiVariable-Bold';
+  font-size: 15px;
+  color: white;
+  font-weight: 200;
+  text-align: end; 
+
+  display: block;
+  width: 100%;
+  text-align: end; 
+}
+
+// For mobile
+@media (max-width: 600px) {
+  div.parsidanceLogo{
+    height: 10%;
+    margin-top: 5rem;
   }
-  
-  .p-toolbar-group-right {
-    .nav-link {
-      margin-right: 1em;
-      cursor: pointer;
-      text-decoration: none;
-      color: inherit; // any color
-      font-size: 1em;
-  
-      &:hover {
-        text-decoration: underline;
-      }
-    }
+
+  p.subtitleLogo {
+    font-size: 0.7rem;
   }
+}
