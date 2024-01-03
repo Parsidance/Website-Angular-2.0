@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'verkoopsvoorwaarden', component: VerkoopsvoorwaardenComponent },
   { path: 'privacypolicy', component: PrivacypolicyComponent },
-  // { path: '**', component: HomeComponent }
+  { path: '**', component: HomeComponent }
 ];
 
 @NgModule({
