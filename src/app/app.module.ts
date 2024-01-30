@@ -8,6 +8,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { InfoComponent } from './info/info.component';
 import { LineupComponent } from './lineup/lineup.component';
+import { AzComponent } from './lineup/az/az.component';
+import { FridayComponent } from './lineup/friday/friday.component';
+import { SaturdayComponent } from './lineup/saturday/saturday.component';
+
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { AboutComponent } from './about/about.component';
 
@@ -38,7 +42,10 @@ import { faFacebook, faInstagram, faYoutube, faTiktok } from '@fortawesome/free-
     HeaderComponent,
     FooterComponent,
     VerkoopsvoorwaardenComponent,
-    PrivacypolicyComponent
+    PrivacypolicyComponent,
+    AzComponent,
+    FridayComponent,
+    SaturdayComponent,
   ],
   imports: [
     BrowserModule,

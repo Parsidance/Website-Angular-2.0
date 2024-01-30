@@ -1,0 +1,52 @@
+div.artistContainer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-flow: row wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+}
+
+div.artist {
+    display: block;
+    width: 25vw;
+    height: 50vh;
+    margin-bottom: 5vh;
+}
+
+div.artist > img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+div.artist.name > h2, h3, a{
+    color: white;
+    text-decoration: none;
+    font-family: "SatoshiVariable-Bold";
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+    text-align: start;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div.artist.name > h2 {
+    font-size: 1.5rem;
+}
+
+div.artist.name > h3, a{
+    font-size: 1rem;
+    font-style: italic;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: #458b6a;
+    text-decoration-thickness: 2px;
+}
