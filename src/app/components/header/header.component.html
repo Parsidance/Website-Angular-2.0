@@ -11,11 +11,14 @@
     </div>
 </p-toolbar> -->
 
-<div class="ticketBanner">
-    <div class="ticketButton">
+
+
+<div class="topBar">
+    <div class="buttons">
+        <fa-icon [icon]="['fas', 'bars']" size="2x" class="menuIcon" (click)="showMenu()"></fa-icon>    
         <a href="https://tickets.parsidance.be" class="ticketButton">TICKETS</a>
-        <hr class="ticketButton">
     </div >
+    <hr class="topBar">
 </div>
 
 <div class="parsidanceLogo">
@@ -25,3 +28,18 @@
     <p class="subtitleLogo">Friday 12.04.2024 - Saturday 13.04.2024</p>
 </div>
 
+<div id="menu">
+    <div class="xIcon">
+        <fa-icon [icon]="['fas', 'xmark']" size="2x" class="xIcon"  (click)="hideMenu()"></fa-icon>    
+    </div>
+    <ul>
+        <li><a href="info">INFO</a></li>
+        <li><a href="lineup">LINE UP</a></li>
+        <li><a href="history">HISTORY</a></li>
+        <li><a href="sponsors">SPONSORS</a></li>
+    </ul>  
+    
+    <div class="trademarkText">
+        <a href="/">&copy; Parsidance Festival 2024</a>
+    </div>
+</div>

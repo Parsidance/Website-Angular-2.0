@@ -19,7 +19,7 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { CarouselModule } from 'primeng/carousel';
 import { FooterComponent } from './components/footer/footer.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faChevronDown, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faEnvelope, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { VerkoopsvoorwaardenComponent } from './verkoopsvoorwaarden/verkoopsvoorwaarden.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
@@ -56,7 +56,9 @@ export class AppModule {
       faFacebook,
       faInstagram,
       faYoutube,
-      faEnvelope
+      faEnvelope,
+      faBars,
+      faXmark
     );
   }
 }

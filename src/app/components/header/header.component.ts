@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  hideMenu() {
+    document.getElementById('menu')!.style.left='-400px';
+  }  
+
+  showMenu() {
+    document.getElementById('menu')!.style.left='0px';
+  }
 }
