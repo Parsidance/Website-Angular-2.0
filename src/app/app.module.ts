@@ -11,6 +11,7 @@ import { LineupComponent } from './lineup/lineup.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { AboutComponent } from './about/about.component';
 
+import { HeaderHomepageComponent } from './components/headerHomepage/headerHomepage.component';
 import { HeaderComponent } from './components/header/header.component';
 
 import { ButtonModule } from 'primeng/button';
@@ -22,7 +23,8 @@ import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontaweso
 import { faChevronDown, faEnvelope, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { VerkoopsvoorwaardenComponent } from './verkoopsvoorwaarden/verkoopsvoorwaarden.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
-import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faYoutube, faTiktok } from '@fortawesome/free-brands-svg-icons';
+
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg
     LineupComponent,
     SponsorsComponent,
     AboutComponent,
+    HeaderHomepageComponent,
     HeaderComponent,
     FooterComponent,
     VerkoopsvoorwaardenComponent,
@@ -55,6 +58,7 @@ export class AppModule {
       faChevronDown,
       faFacebook,
       faInstagram,
+      faTiktok,
       faYoutube,
       faEnvelope,
       faBars,

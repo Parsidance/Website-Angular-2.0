@@ -1,202 +1,179 @@
-// ::ng-deep .p-toolbar {
-//     background-color: white !important;
-//     border: none;
-//     box-shadow: none;
-// }
-
-// .p-toolbar-group-left h1 {
-//     margin: 0;
-//   }
-  
-//   .p-toolbar-group-right {
-//     .nav-link {
-//       margin-right: 1em;
-//       cursor: pointer;
-//       text-decoration: none;
-//       color: inherit; // any color
-//       font-size: 1em;
-  
-//       &:hover {
-//         text-decoration: underline;
-//       }
-//     }
-//   }
-
 div.topBar {
-  position: fixed;
-  top: 0px;
-  margin-bottom: 5%;
-
-  width: 100%; 
-
-  background-color: #080302;
-
-  z-index: 10;
-}
-
-div.buttons {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: end; 
-  top: 10%;
-  margin-top: 2%;
-
-  display: flex;
-  justify-content: space-between;
-}
-
-fa-icon.menuIcon {
-  cursor: pointer;
-  padding-top: 7px;
-  color: white
-}
-
-a.ticketButton {
-  color: white;
-  text-decoration: none;
-  color: #FFF;
-  font-family: "SatoshiVariable-Bold";
-  font-size: 1.875rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-
-  top: 10%;
-}
-
-a:hover {
-  text-decoration: underline;
-  text-decoration-color: #458b6a;
-  text-decoration-thickness: 3px;
-}
-
-hr.topBar {
-  width: 90%;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-div.parsidanceLogo {
-  width: 70%;
-  height: 30%;
-  margin-top: 7rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-img.parsidanceLogo{
-  color: white;
-}
-
-p.subtitleLogo {
-  font-family: 'SatoshiVariable-Bold';
-  font-size: 15px;
-  color: white;
-  font-weight: 200;
-  text-align: end; 
-
-  display: block;
-  width: 100%;
-  text-align: end; 
-}
-
-div#menu {
-  display: block;
-  position: fixed;
-  top: 0px;
-  left: -400px;
-  z-index: 10;
-  transition: left 0.5s;
-
-
-  border-bottom: 100vh solid white;
-  border-left: 0px solid transparent;
-  border-right: 100px solid transparent;
-  height: 0;
-  width: 300px;
-}
-
-div.xIcon {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  margin-top: 10px;
-  margin-right: 10px;
-
-  cursor: pointer;
-}
-
-fa-icon.xIcon {
-  color: black;
-}
-
-fa-icon.xIcon:hover {
-  color: #458b6a;
-}
-
-#menu > ul {
-  list-style: none;
-  height: 70vh;
-  margin-top: 20%;
-}
-
-#menu > ul > li {
-  margin-top: auto;
-  margin-bottom: 20%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: start
+    position: fixed;
+    top: 0px;
+    margin-bottom: 5%;
   
-}
+    width: 100%; 
+  
+    background-color: #080302;
+  
+    z-index: 10;
+  }
+  
+  div.buttons {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: end; 
+    top: 10%;
+    margin-top: 2%;
+  
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  fa-icon.menuIcon {
+    cursor: pointer;
+    padding-top: 7px;
+    color: white
+  }
 
-#menu > ul > li > a {
-  text-decoration: none;
-  color: black;
-  font-family: "SatoshiVariable-Bold";
-  font-size: 1.875rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-
-  top: 10%;
-}
-
-#menu > ul > li > a:hover {
-  text-decoration: underline;
-  text-decoration-color: #458b6a;
-  text-decoration-thickness: 3px;
-}
-
-div.trademarkText {
-  position: absolute;
-  top: 95vh;
-  left: 0px;
-  margin-bottom: 10px;
-  margin-left: 15px;
-}
-
-div.trademarkText > a {
-  text-decoration: none;
-  color: black;
-  font-family: "SatoshiVariable-Bold";
-  font-size: 0.875rem;
-  font-style: italic;
-  font-weight: 200;
-  line-height: normal;
-}
-
-// For mobile
-@media (max-width: 600px) {
-  div.parsidanceLogo{
-    height: 10%;
-    margin-top: 5rem;
+  // To keep horizLine at same positon as other header (space of PD-logo)
+  img.parsidanceLogo {
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    height: 3rem;
+    z-index: 2;
+  }
+  
+  a.ticketButton {
+    color: white;
+    text-decoration: none;
+    color: #FFF;
+    font-family: "SatoshiVariable-Bold";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  
+    top: 10%;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: #458b6a;
+    text-decoration-thickness: 3px;
+  }
+  
+  hr.topBar {
+    width: 90%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 5%;
   }
 
   p.subtitleLogo {
-    font-size: 0.7rem;
+    font-family: 'SatoshiVariable-Bold';
+    font-size: 15px;
+    color: white;
+    font-weight: 200;
+    text-align: end; 
+  
+    display: block;
+    width: 100%;
+    text-align: end; 
   }
-}
+  
+  div#menu {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: -400px;
+    z-index: 10;
+    transition: left 0.5s;
+  
+  
+    border-bottom: 100vh solid white;
+    border-left: 0px solid transparent;
+    border-right: 100px solid transparent;
+    height: 0;
+    width: 300px;
+  }
+  
+  div.xIcon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+  
+    cursor: pointer;
+  }
+  
+  fa-icon.xIcon {
+    color: black;
+  }
+  
+  fa-icon.xIcon:hover {
+    color: #458b6a;
+  }
+  
+  #menu > ul {
+    list-style: none;
+    height: 70vh;
+    margin-top: 20%;
+  }
+  
+  #menu > ul > li {
+    margin-top: auto;
+    margin-bottom: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start
+    
+  }
+  
+  #menu > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-family: "SatoshiVariable-Bold";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  
+    top: 10%;
+  }
+  
+  #menu > ul > li > a:hover {
+    text-decoration: underline;
+    text-decoration-color: #458b6a;
+    text-decoration-thickness: 3px;
+  }
+  
+  div.trademarkText {
+    position: absolute;
+    top: 95vh;
+    left: 0px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  
+  div.trademarkText > a {
+    text-decoration: none;
+    color: black;
+    font-family: "SatoshiVariable-Bold";
+    font-size: 0.875rem;
+    font-style: italic;
+    font-weight: 200;
+    line-height: normal;
+  }
+  
+  // For mobile
+  @media (max-width: 600px) {
+    div.parsidanceLogo{
+      height: 10%;
+      margin-top: 5rem;
+    }
+  
+    p.subtitleLogo {
+      font-size: 0.7rem;
+    }
+  }

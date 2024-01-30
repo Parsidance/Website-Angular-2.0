@@ -1,12 +1,18 @@
 <div class="topBar">
     <div class="buttons">
         <fa-icon [icon]="['fas', 'bars']" size="2x" class="menuIcon" (click)="showMenu()"></fa-icon>    
-        <a href="./" class="parsidanceLogo">
-            <img class="parsidanceLogo" src="../../assets/svg/Parsidance.svg">
-        </a>
+        <!-- To keep horizLine at same positon as other header (space of PD-logo) -->
+        <div class="invisibleSpace"></div>
         <a href="https://tickets.parsidance.be" class="ticketButton">TICKETS</a>
     </div >
     <hr class="topBar">
+</div>
+
+<div class="parsidanceLogo">
+    <a href="./">
+        <img class="parsidanceLogo" src="../../assets/svg/Parsidance.svg">
+    </a>
+    <p class="subtitleLogo">Friday 12.04.2024 - Saturday 13.04.2024</p>
 </div>
 
 <div id="menu">
