@@ -44,7 +44,6 @@ div.sponsor > img {
 
 a.sponsor-link {
     text-decoration: none; // Removes underline from links
-    color: inherit; // Inherits text color from parent elements
     display: block; // Ensures the anchor tag behaves as a block-level element
 
     &:hover {
