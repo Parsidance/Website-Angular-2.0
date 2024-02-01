@@ -42,14 +42,7 @@ div.sponsor > img {
   
 }
 
-a.sponsor-link {
-    text-decoration: none; // Removes underline from links
-    display: block; // Ensures the anchor tag behaves as a block-level element
 
-    &:hover {
-        text-decoration: none; // Adds underline on hover
-    }
-}
 
 div.selectTab {
     top: 10vh;
@@ -76,7 +69,7 @@ h1 {
 
 
 
-.sponsor.name h2{
+.sponsor.name h2,a{
     font-size: 1.4rem;
     color: white;
     text-decoration: none;
