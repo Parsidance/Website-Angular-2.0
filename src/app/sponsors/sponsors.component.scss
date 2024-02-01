@@ -12,16 +12,17 @@ div.sponsorContainer {
 
 div.sponsor {
     display: block;
-    width: 25vw;
-    height: 50vh;
+    width: 20vw;
+    height: 40vh;
+    margin-bottom: 10em;
     
 }
 
 div.sponsor > img {
-    width: 60%;
-    height: 60%;
-    object-fit: cover;
-    object-position: center top;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 a.sponsor-link {
@@ -66,7 +67,7 @@ h1 {
     font-style: normal;
     font-weight: 300;
     line-height: normal; 
-    text-align: start;
+    text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -77,4 +78,9 @@ a:hover{
     text-decoration: underline;
     text-decoration-color: #458b6a;
     text-decoration-thickness: 2px;
+}
+
+.notes{
+    color: white;
+    size: small;
 }
