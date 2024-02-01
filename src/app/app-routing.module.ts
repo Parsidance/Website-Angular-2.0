@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { InfoComponent } from './info/info.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
 import { LineupComponent } from './lineup/lineup.component';
 import { AzComponent } from './lineup/az/az.component';
 import { FridayComponent } from './lineup/friday/friday.component';
@@ -40,6 +41,7 @@ const routes: Routes = [
   },
   { path: 'verkoopsvoorwaarden', component: VerkoopsvoorwaardenComponent },
   { path: 'privacypolicy', component: PrivacypolicyComponent },
+  { path: 'sponsors', component: SponsorsComponent },
   { path: '**', component: HomeComponent }
 ];
 

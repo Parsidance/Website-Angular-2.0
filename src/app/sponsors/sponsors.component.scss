@@ -1,0 +1,80 @@
+div.sponsorContainer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-flow: row wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+
+}
+
+div.sponsor {
+    display: block;
+    width: 25vw;
+    height: 50vh;
+    
+}
+
+div.sponsor > a > img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+a.sponsor-link {
+    text-decoration: none; // Removes underline from links
+    color: inherit; // Inherits text color from parent elements
+    display: block; // Ensures the anchor tag behaves as a block-level element
+
+    &:hover {
+        text-decoration: none; // Adds underline on hover
+    }
+}
+
+div.selectTab {
+    top: 10vh;
+    display: block;
+    width: 90%;
+    height: 15vh;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: white;
+    text-decoration: none;
+    font-family: "SatoshiVariable-Bold";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;  
+    margin-bottom: 0px;
+}
+
+
+
+
+
+.sponsor.name {
+    color: white;
+    text-decoration: none;
+    font-family: "SatoshiVariable-Bold";
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+    text-align: start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: #458b6a;
+    text-decoration-thickness: 2px;
+}
