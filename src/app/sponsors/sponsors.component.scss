@@ -1,3 +1,14 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translatey(20px); /* Start the image 20px below its final position */
+    }
+    to {
+      opacity: 1;
+      transform: translatey(0);
+    }
+  }
+
 div.sponsorContainer {
     display: flex;
     justify-content: space-between;
@@ -10,11 +21,15 @@ div.sponsorContainer {
 
 }
 
+
+
 div.sponsor {
     display: block;
     width: 20vw;
     height: 40vh;
     margin-bottom: 10em;
+    animation: fadeIn 2s ease-out forwards; /* Apply the animation */
+
     
 }
 
@@ -23,6 +38,8 @@ div.sponsor > img {
     height: 100%;
     object-fit: contain;
     object-position: center;
+    animation: fadeIn 2s ease-out forwards
+  
 }
 
 a.sponsor-link {
