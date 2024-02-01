@@ -77,7 +77,8 @@ h1 {
 
 
 
-.sponsor.name {
+.sponsor.name h2{
+    font-size: 1.4rem;
     color: white;
     text-decoration: none;
     font-family: "SatoshiVariable-Bold";
@@ -85,7 +86,7 @@ h1 {
     font-weight: 300;
     line-height: normal; 
     text-align: center;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 5px;
 }
 
@@ -100,4 +101,19 @@ a:hover{
 .notes{
     color: white;
     size: small;
+}
+
+
+/* Larger screens */
+@media (min-width: 768px) {
+    .sponsor.name h2 {
+        font-size: 1.5rem; /* Larger font size for wider viewports */
+    }
+}
+
+/* Smaller screens */
+@media (max-width: 480px) {
+    .sponsor.name h2 {
+        font-size: 1rem; /* Smaller font size for narrow viewports */
+    }
 }
