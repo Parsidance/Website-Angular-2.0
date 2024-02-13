@@ -24,11 +24,12 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { CarouselModule } from 'primeng/carousel';
 import { FooterComponent } from './components/footer/footer.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faChevronDown, faEnvelope, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faChevronUp, faEnvelope, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { VerkoopsvoorwaardenComponent } from './verkoopsvoorwaarden/verkoopsvoorwaarden.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { faFacebook, faInstagram, faYoutube, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
+import {CdkAccordionModule} from '@angular/cdk/accordion';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { faFacebook, faInstagram, faYoutube, faTiktok } from '@fortawesome/free-
     ToolbarModule,
     CarouselModule,
     FontAwesomeModule,
+    CdkAccordionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -63,6 +65,7 @@ export class AppModule {
   constructor(library: FaIconLibrary) {
     library.addIcons(
       faChevronDown,
+      faChevronUp,
       faFacebook,
       faInstagram,
       faTiktok,

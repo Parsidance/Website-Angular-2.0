@@ -1,14 +1,48 @@
 <app-header></app-header>
 
-<p>info works!</p>
-
-<div>
-    <ol>
-        <li>
-            Gebruik de <a href="https://primeng.org/sidebar">sidebar component</a> voor de categorieën te tonen.
-        </li>
-        <li>maak een component voor elke categorie</li>
-        <li>maak de main pagina met een mooie layout</li>
-    </ol>
-
+<div class="selectTab">
+    <h1>INFO</h1>
 </div>
+
+<!-- https://material.angular.io/cdk/accordion/overview -->
+<cdk-accordion class="accordion">
+    <ng-container *ngFor="let title of titles; let index = index, first as isFirst">
+        <cdk-accordion-item 
+            #accordionItem="cdkAccordionItem" 
+            class="accordion-item" 
+            role="button"
+            tabindex="0" 
+            [attr.id]="'accordion-header-' + index" 
+            [attr.aria-expanded]="accordionItem.expanded" 
+            [attr.aria-controls]="'accordion-body-' + index"
+            [expanded]="isFirst">
+
+            <div 
+                class="accordion-item-header" 
+                (click)="accordionItem.toggle()" 
+                (mouseenter)="hovered[index] = true" 
+                (mouseleave)="hovered[index] = false"
+                [style.font-style]="accordionItem.expanded ? 'italic' : 'normal'"
+                >
+                    {{ titles[index] }}
+
+                <span class="accordion-item-expand">
+                    <fa-icon *ngIf="accordionItem.expanded" [icon]="['fas', 'chevron-up']" size="1x" style="color: white" [ngStyle]="{'color': hovered[index] ? '#458b6a' : 'white'}"></fa-icon>
+                    <fa-icon *ngIf="!accordionItem.expanded"[icon]="['fas', 'chevron-down']" size="1x" [ngStyle]="{'color': hovered[index] ? '#458b6a' : 'white'}"></fa-icon>
+                </span>
+            </div>
+
+            <div
+                class="accordion-item-body"
+                role="region"
+                [style.display]="accordionItem.expanded ? '' : 'none'"
+                [attr.id]="'accordion-body-' + index"
+                [attr.aria-labelledby]="'accordion-header-' + index">
+                    {{ explanations[index] }}
+            </div>
+        </cdk-accordion-item>
+    </ng-container>
+</cdk-accordion>
+
+
+<app-footer></app-footer>

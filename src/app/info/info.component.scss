@@ -1,0 +1,91 @@
+div.selectTab {
+    top: 10vh;
+    display: block;
+    width: 70vw;
+    height: 10vh;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: white;
+    text-decoration: none;
+    font-family: "SatoshiVariable-Bold";
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: normal;  
+
+    margin-bottom: 0px;
+}
+
+.accordion {
+    display: block;
+    width: 70vw;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+}
+  
+.accordion-item {
+    display: block;
+    border-top: solid 2px #ccc;
+    border-bottom: solid 2px #ccc;
+
+}
+  
+.accordion-item + .accordion-item {
+    border-top: none;
+}
+  
+.accordion-item-header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    color: white;
+    text-decoration: none;
+    font-family: "SatoshiVariable-Bold";
+    font-size: 1.8rem;
+    font-style: normal;
+    line-height: normal; 
+}
+  
+.accordion-item-description {
+    font-size: 0.85em;
+    color: #999;
+
+    
+    text-decoration: none;
+    font-family: "SatoshiVariable-Bold";
+}
+  
+.accordion-item-header,
+.accordion-item-body {
+    padding: 16px;
+}
+  
+.accordion-item-header:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #458b6a;
+    text-decoration-thickness: 3px;
+}
+
+.accordion-item-expand:hover {
+    color: #458b6a;
+}
+
+.accordion-item-body {
+    align-content: left;
+    justify-content: space-between;
+
+    color: white;
+    text-decoration: none;
+    font-family: "SatoshiVariable-Bold";
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: normal;   
+}
+  
