@@ -31,6 +31,10 @@ Elke push op de `production`-branch wordt automatisch geüpload naar [parsidance
 
 Op de `production`-branch staat er een beveiliging waardoor er sowieso eerst een Pull Request moet aangemaakt worden vooraleer er kan gemerged worden.
 
+## Handig om te weten
+
+> [!TIP] Geef een 'class' of 'id' geen namen zoals sponsor, sponsors, sponsoring..., want die elementen worden anders allemaal geblokkeerd/verwijderd door een adBlocker
+
 ## Kleuren
 
   Hex code verkregen met behulp van de `Color Picker`uit [Powertoys](https://github.com/microsoft/PowerToys)

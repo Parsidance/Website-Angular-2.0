@@ -1,0 +1,104 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translatey(20px); /* Start the image 20px below its final position */
+    }
+    to {
+      opacity: 1;
+      transform: translatey(0);
+    }
+  }
+
+div.spnsrContainer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-flow: row wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+
+}
+
+div.spnsr {
+    display: block;
+    width: 20vw;
+    height: 40vh;
+    margin-bottom: 10em;
+    animation: fadeIn 2s ease-out forwards; /* Apply the animation */
+
+    
+}
+
+div.spnsr > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    animation: fadeIn 2s ease-out forwards
+  
+}
+
+div.selectTab {
+    top: 10vh;
+    display: block;
+    width: 90%;
+    height: 15vh;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: white;
+    text-decoration: none;
+    font-family: "SatoshiVariable-Bold";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;  
+    margin-bottom: 0px;
+}
+
+.spnsr.name h2,a{
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+    font-family: "SatoshiVariable-Bold";
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+
+.spnsr:hover{
+    text-decoration: underline;
+    text-decoration-color: #458b6a;
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+}
+
+.notes{
+    color: white;
+    size: small;
+}
+
+
+/* Larger screens */
+@media (min-width: 768px) {
+    .spnsr.name h2 {
+        font-size: 1.5rem; /* Larger font size for wider viewports */
+    }
+}
+
+/* Smaller screens */
+@media (max-width: 480px) {
+    .spnsr.name h2 {
+        font-size: 1rem; /* Smaller font size for narrow viewports */
+    }
+}
