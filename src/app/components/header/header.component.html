@@ -1,6 +1,8 @@
 <div class="topBar">
     <div class="buttons">
-        <fa-icon [icon]="['fas', 'bars']" size="2x" class="menuIcon" (click)="showMenu()"></fa-icon>    
+        <div #openButton>
+            <fa-icon [icon]="['fas', 'bars']" size="2x" class="menuIcon"></fa-icon>
+        </div>   
         <a href="./" class="parsidanceLogo">
             <img class="parsidanceLogo" src="../../assets/svg/Parsidance.svg">
         </a>
@@ -9,14 +11,14 @@
     <hr class="topBar">
 </div>
 
-<div id="menu">
-    <div class="xIcon">
-        <fa-icon [icon]="['fas', 'xmark']" size="2x" class="xIcon"  (click)="hideMenu()"></fa-icon>    
+<div id="menu" #menuDiv>
+    <div class="xIcon" #closeButton>
+        <fa-icon [icon]="['fas', 'xmark']" size="2x" class="xIcon"  (click)="hideMenu()"></fa-icon>   
     </div>
     <ul>
         <li><a href="info">INFO</a></li>
         <li><a href="line-up/a-z">LINE UP</a></li>
-        <li><a href="history">HISTORY</a></li>
+        <!-- <li><a href="history">HISTORY</a></li> -->
         <li><a href="sponsors">SPONSORS</a></li>
     </ul>  
     
