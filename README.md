@@ -36,6 +36,13 @@ Op de `production`-branch staat er een beveiliging waardoor er sowieso eerst een
 > [!TIP]
 > Geef een 'class' of 'id' geen namen zoals sponsor, sponsors, sponsoring..., want die elementen worden anders allemaal geblokkeerd/verwijderd door een adBlocker
 
+### Sites
+
+- [Wit verwijderen](https://remove-white-background.imageonline.co/)
+- [SVG vanuit site halen](https://jakearchibald.github.io/svgomg/)
+- [Achtergrond verwijderen](https://www.remove.bg/upload) (Slechte kwaliteit)
+- [Kleuren inverteren](https://pinetools.com/invert-image-colors) (Zwart/Wit)
+
 ## Kleuren
 
   Hex code verkregen met behulp van de `Color Picker`uit [Powertoys](https://github.com/microsoft/PowerToys)
