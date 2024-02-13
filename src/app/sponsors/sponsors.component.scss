@@ -9,7 +9,7 @@
     }
   }
 
-div.sponsorContainer {
+div.spnsrContainer {
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -21,9 +21,7 @@ div.sponsorContainer {
 
 }
 
-
-
-div.sponsor {
+div.spnsr {
     display: block;
     width: 20vw;
     height: 40vh;
@@ -33,7 +31,7 @@ div.sponsor {
     
 }
 
-div.sponsor > img {
+div.spnsr > a > img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -41,8 +39,6 @@ div.sponsor > img {
     animation: fadeIn 2s ease-out forwards
   
 }
-
-
 
 div.selectTab {
     top: 10vh;
@@ -65,11 +61,7 @@ h1 {
     margin-bottom: 0px;
 }
 
-
-
-
-
-.sponsor.name h2,a{
+.spnsr.name h2,a{
     font-size: 1.4rem;
     color: white;
     text-decoration: none;
@@ -84,10 +76,11 @@ h1 {
 
 
 
-a:hover{
+.spnsr:hover{
     text-decoration: underline;
     text-decoration-color: #458b6a;
     text-decoration-thickness: 2px;
+    cursor: pointer;
 }
 
 .notes{
@@ -98,14 +91,14 @@ a:hover{
 
 /* Larger screens */
 @media (min-width: 768px) {
-    .sponsor.name h2 {
+    .spnsr.name h2 {
         font-size: 1.5rem; /* Larger font size for wider viewports */
     }
 }
 
 /* Smaller screens */
 @media (max-width: 480px) {
-    .sponsor.name h2 {
+    .spnsr.name h2 {
         font-size: 1rem; /* Smaller font size for narrow viewports */
     }
 }
