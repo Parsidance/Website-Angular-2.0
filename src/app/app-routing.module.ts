@@ -17,7 +17,7 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'info', component: InfoComponent },
+  { path: 'info', component: InfoComponent , data: { title: 'Info' }},
   { path: 'line-up', 
     component: LineupComponent,
     data: { title: 'Line-up' },
