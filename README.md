@@ -12,7 +12,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Interessante links
 
-- Components library: [Primeng](https://www.primeng.org)
 - [SCSS guide](https://docs.gitlab.com/ee/development/fe_guide/style/scss.html)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
