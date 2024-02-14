@@ -3,7 +3,7 @@ div.selectTab {
     display: block;
     width: 90%;
     height: 15vh;
-    margin-top: 15vh;
+    margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -28,7 +28,7 @@ div.selectTab > ul {
     padding-left: 0px;
 }
 
-div.selectTab > ul > li, a {
+div.selectTab > ul > li {
     list-style: none;
     color: white;
     text-decoration: none;
@@ -39,9 +39,19 @@ div.selectTab > ul > li, a {
     line-height: normal; 
 
     margin-left: 0px;
-    margin-right: 8vw;
+    margin-right: 10vw;
 
     cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: "SatoshiVariable-Bold";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
 }
 
 div.selectTab > ul > li:hover {
@@ -54,4 +64,11 @@ a.active {
     text-decoration: underline;
     text-decoration-color: #458b6a;
     text-decoration-thickness: 2px;
+}
+
+// For mobile
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
 }

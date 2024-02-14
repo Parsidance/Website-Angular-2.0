@@ -3,7 +3,7 @@ div.selectTab {
     display: block;
     width: 90%;
     height: 10vh;
-    margin-top: 15vh;
+    margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -89,4 +89,10 @@ h1 {
     font-style: normal;
     line-height: normal;   
 }
-  
+
+// For mobile
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}

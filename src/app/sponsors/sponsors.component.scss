@@ -14,7 +14,7 @@ div.selectTab {
     display: block;
     width: 90%;
     height: 10vh;
-    margin-top: 15vh;
+    margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -39,7 +39,6 @@ div.spnsrContainer {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-
 }
 
 div.spnsr {
@@ -48,7 +47,7 @@ div.spnsr {
     height: 15vh;
     margin: 1em;
     margin-bottom: 10vh;
-    animation: fadeIn 2s ease-out forwards; /* Apply the animation */
+    animation: fadeIn 1s ease-out forwards; /* Apply the animation */
 }
 
 div.spnsr > a > img {
@@ -56,7 +55,7 @@ div.spnsr > a > img {
     height: 100%;
     object-fit: contain;
     object-position: center;
-    animation: fadeIn 2s ease-out forwards
+    animation: fadeIn 1s ease-out forwards
 }
 
 .spnsr h2, a{
@@ -79,16 +78,18 @@ div.spnsr > a > img {
     cursor: pointer;
 }
 
-/* Larger screens */
-@media (min-width: 768px) {
-    .spnsr.name h2 {
-        font-size: 1.5rem; /* Larger font size for wider viewports */
+// For mobile
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
     }
-}
 
-/* Smaller screens */
-@media (max-width: 480px) {
-    .spnsr.name h2 {
-        font-size: 1rem; /* Smaller font size for narrow viewports */
+    div.spnsrContainer {
+        width: 80%;
+    }
+
+    div.spnsr {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
