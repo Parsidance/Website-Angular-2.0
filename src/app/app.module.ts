@@ -18,10 +18,6 @@ import { AboutComponent } from './about/about.component';
 import { HeaderHomepageComponent } from './components/headerHomepage/headerHomepage.component';
 import { HeaderComponent } from './components/header/header.component';
 
-import { ButtonModule } from 'primeng/button';
-import { ToolbarModule } from 'primeng/toolbar';
-
-import { CarouselModule } from 'primeng/carousel';
 import { FooterComponent } from './components/footer/footer.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faChevronDown, faChevronUp, faEnvelope, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
@@ -52,9 +48,6 @@ import {CdkAccordionModule} from '@angular/cdk/accordion';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ButtonModule,
-    ToolbarModule,
-    CarouselModule,
     FontAwesomeModule,
     CdkAccordionModule,
   ],

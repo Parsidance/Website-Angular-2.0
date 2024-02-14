@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "parsidance-website:build:production"
+              "buildTarget": "parsidance-website:build:production"
             },
             "development": {
-              "browserTarget": "parsidance-website:build:development"
+              "buildTarget": "parsidance-website:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "parsidance-website:build"
+            "buildTarget": "parsidance-website:build"
           }
         },
         "test": {
