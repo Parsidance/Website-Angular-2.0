@@ -1,6 +1,6 @@
-<div class="topBar">
+<div class="topBar desktop">
     <div class="buttons">
-        <div #openButton>
+        <div #openDeskButton>
             <fa-icon [icon]="['fas', 'bars']" size="2x" class="menuIcon"></fa-icon>
         </div>   
         <a href="./" class="parsidanceLogo">
@@ -11,15 +11,31 @@
     <hr class="topBar">
 </div>
 
+<div class="topBar mobile">
+    <div class="buttons">
+        <a href="./" class="parsidanceLogo">
+            <img class="parsidanceLogo" src="../../assets/svg/Parsidance.svg">
+        </a>
+        <div #openMobButton style="margin-top: 8px;">
+            <fa-icon [icon]="['fas', 'bars']" size="2x" class="menuIcon"></fa-icon>
+        </div>
+        
+        <div class="xIcon mobile" #closeMobButton>
+            <fa-icon [icon]="['fas', 'xmark']" size="2x" class="xIcon"></fa-icon>   
+        </div>
+    </div >
+    <hr class="topBar">
+</div>
+
 <div id="menu" #menuDiv>
-    <div class="xIcon" #closeButton>
-        <fa-icon [icon]="['fas', 'xmark']" size="2x" class="xIcon"  (click)="hideMenu()"></fa-icon>   
+    <div class="xIcon desktop" #closeDeskButton>
+        <fa-icon [icon]="['fas', 'xmark']" size="2x" class="xIcon"></fa-icon>   
     </div>
     <ul>
         <li><a href="info">INFO</a></li>
         <li><a href="line-up/a-z">LINE UP</a></li>
         <!-- <li><a href="history">HISTORY</a></li> -->
-        <li><a href="sponsors">SPONSORS</a></li>
+        <li><a href="sponsors">MET DANK AAN</a></li>
     </ul>  
     
     <div class="trademarkText">

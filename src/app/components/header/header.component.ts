@@ -12,28 +12,29 @@ export class HeaderComponent {
   }
 
   @ViewChild('menuDiv') menuDiv!: ElementRef;
-  @ViewChild('openButton') openButton!: ElementRef;
+  @ViewChild('openDeskButton') openDeskButton!: ElementRef;
+  @ViewChild('openMobButton') openMobButton!: ElementRef;
   @ViewChild('closeButton') closeButton!: ElementRef;
-
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent): void {
-      const clickedInside = this.menuDiv.nativeElement.contains(event.target);
-      const clickedOpen = this.openButton.nativeElement.contains(event.target);
-      const clickedClose = this.closeButton.nativeElement.contains(event.target);
+    const clickedInside = this.menuDiv.nativeElement.contains(event.target);
+    const clickedOpenDesk = this.openDeskButton.nativeElement.contains(event.target);
+    const clickedOpenMob = this.openMobButton.nativeElement.contains(event.target);
+    const clickedClose = this.closeButton.nativeElement.contains(event.target);
 
-      if (!clickedInside && !clickedOpen) {
-          this.hideMenu();
-      }
-
-      if(clickedOpen) {
-        this.showMenu();
-      }
-
-      if(clickedClose) {
+    if (!clickedInside && (!clickedOpenDesk || !clickedOpenMob)) {
         this.hideMenu();
-      }
-  }
+    }
+
+    if(clickedOpenDesk || clickedOpenMob) {
+      this.showMenu();
+    }
+
+    if(clickedClose) {
+      this.hideMenu();
+    }
+}
 
   hideMenu() {
     document.getElementById('menu')!.style.left='-400px';

@@ -1,3 +1,11 @@
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
 div.topBar {
   position: fixed;
   top: 0px;
@@ -178,6 +186,16 @@ div.trademarkText > a {
 
 // For mobile
 @media (max-width: 600px) {
+  .desktop {
+    display: none;
+    z-index: 0;
+  }
+
+  .mobile {
+    display: block;
+    z-index: 10;
+  }
+
   div.parsidanceLogo{
     height: 10%;
     margin-top: 5rem;

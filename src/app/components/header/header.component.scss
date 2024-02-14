@@ -1,3 +1,11 @@
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
 div.topBar {
     position: fixed;
     top: 0px;
@@ -168,6 +176,14 @@ div.topBar {
   
   // For mobile
   @media (max-width: 600px) {
+    .mobile {
+      display: block;
+    }
+    
+    .desktop {
+      display: none;
+    }
+
     div.parsidanceLogo{
       height: 10%;
       margin-top: 5rem;
