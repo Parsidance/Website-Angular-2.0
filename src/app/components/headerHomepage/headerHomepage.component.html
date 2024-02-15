@@ -17,12 +17,18 @@
         <div #openMobButton style="margin-top: 4px;">
             <fa-icon [icon]="['fas', 'bars']" size="2x" class="menuIcon"></fa-icon>
         </div>
-        <div class="xIcon mobile" #closeMobButton>
-            <fa-icon [icon]="['fas', 'xmark']" size="2x" class="xIcon"></fa-icon>   
-        </div>  
         <!-- To keep horizLine at same positon as other header (space of PD-logo) -->
     </div >
     <hr class="topBar">
+</div>
+
+<div class="topBarClose mobile">
+    <div class="closeContainer">
+        <div class="xIcon mobile" #closeMobButton>
+            <fa-icon [icon]="['fas', 'xmark']" size="2x" class="xIcon"></fa-icon>   
+        </div>
+    </div>
+    <hr>
 </div>
 
 <div class="parsidanceLogo">
@@ -33,7 +39,7 @@
 </div>
 
 <div id="menu" #menuDiv>
-    <div class="xIcon" #closeButton >
+    <div class="xIcon" #closeDeskButton >
         <fa-icon [icon]="['fas', 'xmark']" size="2x" class="xIcon"></fa-icon>    
     </div>
     <ul>

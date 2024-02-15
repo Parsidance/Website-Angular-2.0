@@ -14,15 +14,16 @@ export class HeaderComponent {
   @ViewChild('menuDiv') menuDiv!: ElementRef;
   @ViewChild('openDeskButton') openDeskButton!: ElementRef;
   @ViewChild('openMobButton') openMobButton!: ElementRef;
-  @ViewChild('closeButton') closeButton!: ElementRef;
+  @ViewChild('closeDeskButton') closeDeskButton!: ElementRef;
+  @ViewChild('closeMobButton') closeMobButton!: ElementRef;
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent): void {
     const clickedInside = this.menuDiv.nativeElement.contains(event.target);
     const clickedOpenDesk = this.openDeskButton.nativeElement.contains(event.target);
     const clickedOpenMob = this.openMobButton.nativeElement.contains(event.target);
-    const clickedClose = this.closeButton.nativeElement.contains(event.target);
-
+    const clickedCloseDesk = this.closeDeskButton.nativeElement.contains(event.target);
+    const clickedCloseMob = this.closeMobButton.nativeElement.contains(event.target);
     if (!clickedInside && (!clickedOpenDesk || !clickedOpenMob)) {
         this.hideMenu();
     }
@@ -31,8 +32,21 @@ export class HeaderComponent {
       this.showMenu();
     }
 
-    if(clickedClose) {
+    if(clickedCloseDesk || clickedCloseMob) {
       this.hideMenu();
+    }
+
+    if(clickedOpenMob){
+      this.closeMobButton.nativeElement.style.display = 'block';
+      this.closeMobButton.nativeElement.parentElement.style.display = 'block';
+      this.openMobButton.nativeElement.style.display = 'none';
+    }
+
+    if(clickedCloseMob){
+      console.log('clickedCloseMob');
+      this.closeMobButton.nativeElement.style.display = 'none';
+      this.closeMobButton.nativeElement.parentElement.style.display = 'none';
+      this.openMobButton.nativeElement.style.display = 'block';
     }
 }
 
