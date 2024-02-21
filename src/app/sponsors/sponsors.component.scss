@@ -80,8 +80,10 @@ div.spnsr > a > img {
 
 // For mobile
 @media (max-width: 600px) {
-    h1 {
+    
+    .selectTab h1, hr {
         font-size: 2.5rem;
+        display: none;
     }
 
     div.spnsrContainer {
