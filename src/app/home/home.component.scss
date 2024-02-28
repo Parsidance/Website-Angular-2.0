@@ -110,7 +110,7 @@
   
   @keyframes scrolling {
     from {
-      transform: translate3d(10%, 0, 0);
+      transform: translate3d(100vw, 0, 0);
     }
     to {
       transform: translate3d(-100%, 0, 0);
@@ -285,19 +285,19 @@ img.lineup {
     margin-top: 10px;
     margin-bottom: 10px;
   
-    animation: scrolling 40s linear infinite;
+    animation: scrollingMobile 60s linear infinite;
 
     &:hover {
       animation-play-state: paused;
     }
   }
   
-  @keyframes scrolling {
+  @keyframes scrollingMobile {
       from {
-        transform: translate3d(20%, 0, 0);
+        transform: translateX(95vw);
       }
       to {
-        transform: translate3d(-100%, 0, 0);
+        transform: translateX(-100%);
       }
   }
 
