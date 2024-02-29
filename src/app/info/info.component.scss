@@ -12,12 +12,26 @@ h1 {
     color: white;
     text-decoration: none;
     font-family: "SatoshiVariable-Bold";
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
     line-height: normal; 
     font-style: italic; 
 
     margin-bottom: 0px;
+}
+
+h2 {
+    display: block;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-top: 0;
+
+    color: white;
+    text-decoration: none;
+    font-family: "SatoshiVariable-Bold";
+    font-size: 2.4rem;
 }
 
 .accordion {
@@ -51,6 +65,8 @@ h1 {
     font-size: 1.8rem;
     font-style: normal;
     line-height: normal; 
+
+    padding-left: 50px !important;
 }
   
 .accordion-item-description {
@@ -90,9 +106,22 @@ h1 {
     line-height: normal;   
 }
 
+a {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #458b6a;
+    font-style: italic;
+    
+
+}
+
 // For mobile
 @media (max-width: 600px) {
     h1 {
         font-size: 2.5rem;
+    }
+
+    .accordion-item-header {
+        font-size: 1.5rem;
     }
 }
