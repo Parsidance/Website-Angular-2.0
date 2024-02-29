@@ -40,7 +40,6 @@ export class HeaderComponent {
     }
 
     if(clickedCloseDesk || clickedCloseMob ){
-      console.log('clickedCloseMob');
       this.hideMenu();
       this.closeMobButton.nativeElement.style.display = 'none';
       this.closeMobButton.nativeElement.parentElement.style.display = 'none';
