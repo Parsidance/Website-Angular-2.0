@@ -20,7 +20,7 @@ h1 {
     margin-bottom: 0px;
 }
 
-h2 {
+h2.infoTitle {
     display: block;
     width: 70vw;
     margin-left: auto;
@@ -106,7 +106,7 @@ h2 {
     line-height: normal;   
 }
 
-a {
+div.accordion-item-body > a {
     color: white;
     text-decoration: underline;
     text-decoration-color: #458b6a;

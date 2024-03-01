@@ -26,22 +26,29 @@ export class HeaderHomepageComponent {
 
       if (!clickedInside && (!clickedOpenDesk || !clickedOpenMob)) {
         this.hideMenu(); 
-        this.closeMobButton.nativeElement.style.display = 'none';
-        this.closeMobButton.nativeElement.parentElement.parentElement.style.display = 'none';
-        this.openMobButton.nativeElement.style.display = 'block';
-        this.openMobButton.nativeElement.parentElement.parentElement.style.display = 'block';
+        // this.closeMobButton.nativeElement.style.display = 'none';
+        // this.closeMobButton.nativeElement.parentElement.parentElement.style.display = 'none';
+        // this.openMobButton.nativeElement.style.display = 'block';
+        // this.openMobButton.nativeElement.parentElement.parentElement.style.display = 'block';
       }
 
       if(clickedOpenDesk || clickedOpenMob) {
         this.showMenu();
+      }
+
+      if(clickedCloseDesk || clickedCloseMob) {
+        this.hideMenu();
+      }
+
+      if(clickedOpenMob){
         this.closeMobButton.nativeElement.style.display = 'block';
         this.closeMobButton.nativeElement.parentElement.parentElement.style.display = 'block';
         this.openMobButton.nativeElement.style.display = 'none';
+        this.openMobButton.nativeElement.parentElement.parentElement.style.display = 'none';
 
       }
   
-      if(clickedCloseDesk || clickedCloseMob) {
-        this.hideMenu();
+      if(clickedCloseMob){
         this.closeMobButton.nativeElement.style.display = 'none';
         this.closeMobButton.nativeElement.parentElement.parentElement.style.display = 'none';
         this.openMobButton.nativeElement.style.display = 'block';
