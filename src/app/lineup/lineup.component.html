@@ -1,14 +1,17 @@
 <app-header></app-header>
-<p>lineup works!</p>
 
-<div>
-    Dit kan gemaakt worden door middel van de p-tabView component van primeNG
 
-    <br>
-    zie hier: 
-    <a href="https://primeng.org/tabview">
-        tabview
-    </a>
-    <br>
-    per artiest een kaart maken. En dit dynamisch doen lijken (hover = toon uur)
+
+<div class="selectTab">
+    <h1>LINE-UP</h1>
+    <ul>
+        <li id="az"><a routerLink="/line-up/a-z" routerLinkActive="active">A-Z</a></li>
+        <li id="friday"><a routerLink="/line-up/friday" routerLinkActive="active">Friday 12.04</a></li>
+        <li id="saturday"><a routerLink="/line-up/saturday" routerLinkActive="active">Saturday 13.04</a></li>
+    </ul>
+    <hr>
 </div>
+
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>

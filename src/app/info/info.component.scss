@@ -1,0 +1,127 @@
+div.selectTab {
+    top: 10vh;
+    display: block;
+    width: 90%;
+    height: 10vh;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: white;
+    text-decoration: none;
+    font-family: "SatoshiVariable-Bold";
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: normal; 
+    font-style: italic; 
+
+    margin-bottom: 0px;
+}
+
+h2.infoTitle {
+    display: block;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-top: 0;
+
+    color: white;
+    text-decoration: none;
+    font-family: "SatoshiVariable-Bold";
+    font-size: 2.4rem;
+}
+
+.accordion {
+    display: block;
+    width: 70vw;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+}
+  
+.accordion-item {
+    display: block;
+    border-top: solid 2px #ccc;
+    border-bottom: solid 2px #ccc;
+
+}
+  
+.accordion-item + .accordion-item {
+    border-top: none;
+}
+  
+.accordion-item-header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    color: white;
+    text-decoration: none;
+    font-family: "SatoshiVariable-Bold";
+    font-size: 1.8rem;
+    font-style: normal;
+    line-height: normal; 
+
+    padding-left: 50px !important;
+}
+  
+.accordion-item-description {
+    font-size: 0.85em;
+    color: #999;
+
+    
+    text-decoration: none;
+    font-family: "SatoshiVariable-Bold";
+}
+  
+.accordion-item-header,
+.accordion-item-body {
+    padding: 16px;
+}
+  
+.accordion-item-header:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #458b6a;
+    text-decoration-thickness: 3px;
+}
+
+.accordion-item-expand:hover {
+    color: #458b6a;
+}
+
+.accordion-item-body {
+    align-content: left;
+    justify-content: space-between;
+
+    color: white;
+    text-decoration: none;
+    font-family: "SatoshiVariable-Bold";
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: normal;   
+}
+
+div.accordion-item-body > a {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #458b6a;
+    font-style: italic;
+    
+
+}
+
+// For mobile
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .accordion-item-header {
+        font-size: 1.5rem;
+    }
+}

@@ -83,6 +83,55 @@
 // }
 
 // ********* CURRENT HOMEPAGE *********
+
+// ********* SCROLLING TEXT *********
+
+  .scrollContainer {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    white-space: nowrap;
+  }
+
+  .scrollText {
+    text-align: left;
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+    animation: scrolling 40s linear infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+  
+  @keyframes scrolling {
+    from {
+      transform: translate3d(100vw, 0, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+}
+
+// ************************************
+
+div.banner {
+  width: 100%;
+  height: 60vh;
+  display: block;
+}
+
+div.banner > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
 div.progressTickets {
   display: block;
   width: 60%;
@@ -138,54 +187,75 @@ div.percentageLabel.saturday {
   color: black;
 }
 
-div.chevronDown {
-  position: absolute;
-  top: 100vh;
-  transform: translateY(-150%);
-  left: calc(50% - 24px);
-  cursor: pointer;
-  display: block;
-}
-
-div.aftermovie {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  margin-top: 30vh;
-
+div.lineup {
   width: 100%;
-  height: 80vh;
-
+  height: 70vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin-bottom: 50px;
 }
 
-p.aftermovie {
-  font-family: 'SatoshiVariable-Bold';
-  font-size: 25px;
-  color: white;
-  font-weight: 200;
-  text-align: center; 
-
-  margin-top: 8%;
+a.lineup {
+  max-width: 100%;
 }
 
-video.aftermovie {
-  width: 70%;
-  height: 70%;
-  margin-left: auto;
-  margin-right: auto;
+img.lineup {
+  max-height: 90%;
+  max-width: 90%;
+  object-fit: scale-down;
+  object-position: center top;
+  margin: 50px;
+  border-radius: 5px;
 }
 
-#promovidSquare {
-  display: block;
-}
+// div.chevronDown {
+//   position: absolute;
+//   top: 100vh;
+//   transform: translateY(-150%);
+//   left: calc(50% - 24px);
+//   cursor: pointer;
+//   display: block;
+// }
+// 
+// div.aftermovie {
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 10px;
+//   margin-top: 30vh;
 
-#promovidVertical {
-  display: none;
-}
+//   width: 100%;
+//   height: 80vh;
+
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+// }
+
+// p.aftermovie {
+//   font-family: 'SatoshiVariable-Bold';
+//   font-size: 25px;
+//   color: white;
+//   font-weight: 200;
+//   text-align: center; 
+
+//   margin-top: 8%;
+// }
+
+// video.aftermovie {
+//   width: 70%;
+//   height: 70%;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// #promovidSquare {
+//   display: block;
+// }
+
+// #promovidVertical {
+//   display: none;
+// }
 
 // For mobile
 @media (max-width: 600px) {
@@ -206,35 +276,85 @@ video.aftermovie {
 
   // ********* CURRENT HOMEPAGE *********
 
+  .scrollText {
+    position: relative;
+    left: 0px;
+    text-align: right;
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+    animation: scrollingMobile 60s linear infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+  
+  @keyframes scrollingMobile {
+      from {
+        transform: translateX(95vw);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+  }
+
   div.progressTickets {
-    margin-top: 30%;
-
+    margin-top: 15px;
+    position: relative;
   }
-
-  div.chevronDown {
-    display: none;
-  }
-
-  div.aftermovie {
+  
+  div.lineup {
+    position: relative;
+    width: 90%;
+    height: 70vh;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 20vh;
+  }
   
-    width: 100%;
-    height: 80vh;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  img.lineup {
+    max-height: 50%;
+    max-width: 90%;
+    object-fit: scale-down;
+    object-position: center top;
+    margin: 0;
+    margin-bottom: 20px;
+
+    border-radius: 5px;
   }
 
-  #promovidSquare {
-    display: none;
-  }
+  // div.chevronDown {
+  //   display: none;
+  // }
 
-  #promovidVertical {
-    display: block;
-  }
+  // div.aftermovie {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   margin-bottom: 10px;
+  //   margin-top: 20vh;
+  
+  //   width: 100%;
+  //   height: 80vh;
+  
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column;
+  // }
+
+  // #promovidSquare {
+  //   display: none;
+  // }
+
+  // #promovidVertical {
+  //   display: block;
+  // }
 }

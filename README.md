@@ -12,10 +12,9 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Interessante links
 
-- Components library: [Primeng](https://www.primeng.org)
 - [SCSS guide](https://docs.gitlab.com/ee/development/fe_guide/style/scss.html)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0. 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
 ## Deployment
 
@@ -30,6 +29,18 @@ Naar de `main`-branch kan er gemerged worden zonder enige beveiliging
 Elke push op de `production`-branch wordt automatisch geüpload naar [parsidance.be](https://parsidance.be) met behulp van FTP. Script hiervoor staat in `.github/workflows/prod-deploy-OVH.yaml`
 
 Op de `production`-branch staat er een beveiliging waardoor er sowieso eerst een Pull Request moet aangemaakt worden vooraleer er kan gemerged worden.
+
+## Handig om te weten
+
+> [!TIP]
+> Geef een 'class' of 'id' geen namen zoals sponsor, sponsors, sponsoring..., want die elementen worden anders allemaal geblokkeerd/verwijderd door een adBlocker
+
+### Sites
+
+- [Wit verwijderen](https://remove-white-background.imageonline.co/)
+- [SVG vanuit site halen](https://jakearchibald.github.io/svgomg/)
+- [Achtergrond verwijderen](https://www.remove.bg/upload) (Slechte kwaliteit)
+- [Kleuren inverteren](https://pinetools.com/invert-image-colors) (Zwart/Wit)
 
 ## Kleuren
 
