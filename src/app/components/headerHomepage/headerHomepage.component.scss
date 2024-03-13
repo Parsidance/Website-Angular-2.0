@@ -31,6 +31,12 @@ div.buttons {
   position: relative;
 }
 
+div.buttons > div {
+  padding: 10px;
+  margin: -10px;
+  cursor: pointer;
+}
+
 div.openMobButton {
   padding: 10px;
   padding-top: 14px;
@@ -126,9 +132,10 @@ div.xIcon {
   position: absolute;
   top: 0px;
   right: 0px;
-  margin-top: 10px;
-  margin-right: 10px;
-
+  padding: 10px;
+  margin: -10px;
+  padding-top: 20px;
+  padding-right: 20px;
   cursor: pointer;
 }
 
@@ -202,6 +209,7 @@ div.trademarkText > a {
   }
 
   div.topBarClose.mobile{
+    display: none;
     position: fixed;
     top: 0px;
     margin-bottom: 5%;
@@ -228,7 +236,8 @@ div.trademarkText > a {
     justify-content: flex-end;
     width: 25px; 
     display: none;
-    margin: 0;
+    padding: 10px;
+    margin: -10px;
   }
 
 
