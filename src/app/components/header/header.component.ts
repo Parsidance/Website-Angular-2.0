@@ -29,6 +29,7 @@ export class HeaderComponent {
         this.hideMenu();
         this.closeMobButton.nativeElement.style.display = 'none';
         this.closeMobButton.nativeElement.parentElement.style.display = 'none';
+        this.closeMobButton.nativeElement.parentElement.parentElement.style.display = 'none';
         this.openMobButton.nativeElement.style.display = 'block';
     }
 
@@ -36,6 +37,7 @@ export class HeaderComponent {
       this.showMenu();
       this.closeMobButton.nativeElement.style.display = 'block';
       this.closeMobButton.nativeElement.parentElement.style.display = 'block';
+      this.closeMobButton.nativeElement.parentElement.parentElement.style.display = 'block';
       this.openMobButton.nativeElement.style.display = 'none';
     }
 
@@ -43,6 +45,7 @@ export class HeaderComponent {
       this.hideMenu();
       this.closeMobButton.nativeElement.style.display = 'none';
       this.closeMobButton.nativeElement.parentElement.style.display = 'none';
+      this.closeMobButton.nativeElement.parentElement.parentElement.style.display = 'none';
       this.openMobButton.nativeElement.style.display = 'block';
     }
 }
