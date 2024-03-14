@@ -19,26 +19,26 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'info', component: InfoComponent , data: { title: 'Info' }},
-  // { path: 'line-up', 
-  //   component: LineupComponent,
-  //   data: { title: 'Line-up' },
-  //   children:[
-  //     {
-  //       path:'a-z',
-  //       component: AzComponent,
-  //     },
-  //     {
-  //       path:'friday',
-  //       component: FridayComponent,
-  //       data: { title: 'Line-up Friday' },
-  //     },
-  //     {
-  //       path:'saturday',
-  //       component: SaturdayComponent,
-  //       data: { title: 'Line-up Saturday' },
-  //     },
-  //   ] 
-  // },
+  { path: 'line-up', 
+    component: LineupComponent,
+    data: { title: 'Line-up' },
+    children:[
+      {
+        path:'a-z',
+        component: AzComponent,
+      },
+      {
+        path:'friday',
+        component: FridayComponent,
+        data: { title: 'Line-up Friday' },
+      },
+      {
+        path:'saturday',
+        component: SaturdayComponent,
+        data: { title: 'Line-up Saturday' },
+      },
+    ] 
+  },
   { path: 'verkoopsvoorwaarden', component: VerkoopsvoorwaardenComponent },
   { path: 'privacypolicy', component: PrivacypolicyComponent },
   { path: 'sponsors', component: SponsorsComponent },

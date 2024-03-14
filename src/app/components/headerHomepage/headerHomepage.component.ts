@@ -26,10 +26,11 @@ export class HeaderHomepageComponent {
 
       if (!clickedInside && (!clickedOpenDesk || !clickedOpenMob)) {
         this.hideMenu(); 
-        // this.closeMobButton.nativeElement.style.display = 'none';
-        // this.closeMobButton.nativeElement.parentElement.parentElement.style.display = 'none';
-        // this.openMobButton.nativeElement.style.display = 'block';
-        // this.openMobButton.nativeElement.parentElement.parentElement.style.display = 'block';
+        this.closeMobButton.nativeElement.style.display = 'none';
+        this.closeMobButton.nativeElement.parentElement.parentElement.style.display = 'none';
+        this.openMobButton.nativeElement.style.display = 'block';
+        if(window.innerWidth <= 600)
+          this.openMobButton.nativeElement.parentElement.parentElement.style.display = 'block';
       }
 
       if(clickedOpenDesk || clickedOpenMob) {

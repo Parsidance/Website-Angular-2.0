@@ -31,6 +31,13 @@ div.topBar {
     position: relative;
   }
   
+  div.buttons > div {
+    padding: 10px;
+    padding-top: 18px;
+    margin: -10px;
+    cursor: pointer;
+  }
+
   fa-icon.menuIcon {
     cursor: pointer;
     padding-top: 7px;
@@ -109,9 +116,10 @@ div.topBar {
     position: absolute;
     top: 0px;
     right: 0px;
-    margin-top: 10px;
-    margin-right: 10px;
-  
+    padding: 10px;
+    margin: -10px;
+    padding-top: 20px;
+    padding-right: 20px;
     cursor: pointer;
   }
   
@@ -185,6 +193,7 @@ div.topBar {
     }
 
     div.topBarClose.mobile{
+      display: none;
       position: fixed;
       top: 0px;
       margin-bottom: 5%;
@@ -212,7 +221,8 @@ div.topBar {
       justify-content: flex-end;
       width: 25px; 
       display: none;
-      margin: 0;
+      padding: 10px;
+      margin: -10px;      
     }
 
     fa-icon.xIcon {
