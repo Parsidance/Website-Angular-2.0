@@ -40,7 +40,7 @@ export class HomeComponent {
   animateProgressBar() {
     // Set progress to 80% over a specific duration (e.g., 2 seconds)
     setTimeout(() => {
-      this.progressFriday = 65;
+      this.progressFriday = 75;
     }, 1000); // Change the time duration as needed
     setTimeout(() => {
       this.progressSaturday = 100;
