@@ -41,7 +41,7 @@ export class InfoComponent {
     'Tickets voor Parsidance 2024 zijn verkrijgbaar via <a href="https://tickets.parsidance.be">tickets.parsidance.be</a>.',
 
     // Wanneer ontvang ik mijn ticket?
-    'Tickets worden pas later, in aanloop naar het festival bezorgd. We kiezen bewust voor deze uitgestelde verzending met als \
+    'De tickets werden op woensdag 20 maart om 20u doorgestuurd. Tickets die later dan deze datum worden aangekocht, zullen direct verstuurd worden. We kiezen bewust voor deze uitgestelde verzending met als \
     voornaamste doel de handel op de zwarte markt en ticketfraude tegen te gaan.', 
 
     // Ik ben mijn ticket kwijt…
@@ -55,7 +55,7 @@ export class InfoComponent {
     en dus geen toegang tot het festival zullen verlenen.', 
 
     // Nog vragen over je ticket(s)?
-    'De medewerkers van onze ticketpartner Tickoweb staan <a href="https://www.tickoweb.be/contact-help.php">online</a> tot je dienst. Een antwoord op de meest \
+    'Vragen over je ticket(s) kan je sturen naar <a href="mailto:tickets@parsidance.be">tickets@parsidance.be</a>. Een antwoord op de meest \
     courante ticket gerelateerde vragen vind je in de <a href="https://help.tickoweb.be/help/nl-nl/23-ticket-kopers">Tickoweb FAQ</a>.', 
   ]
 
