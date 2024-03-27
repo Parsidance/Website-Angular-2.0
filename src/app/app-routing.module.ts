@@ -12,14 +12,17 @@ import { SaturdayComponent } from './lineup/saturday/saturday.component';
 // import { AboutComponent } from './about/about.component';
 import { VerkoopsvoorwaardenComponent } from './verkoopsvoorwaarden/verkoopsvoorwaarden.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
-
-
-
+import { TimetableComponent } from './timetable/timetable.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'info', component: InfoComponent , data: { title: 'Info' }},
-  { path: 'line-up', 
+  { 
+    path: '', 
+    component: HomeComponent 
+  },{ 
+    path: 'info', 
+    component: InfoComponent, 
+    data: { title: 'Info' }
+  },{ path: 'line-up', 
     component: LineupComponent,
     data: { title: 'Line-up' },
     children:[
@@ -38,11 +41,26 @@ const routes: Routes = [
         data: { title: 'Line-up Saturday' },
       },
     ] 
-  },
-  { path: 'verkoopsvoorwaarden', component: VerkoopsvoorwaardenComponent },
-  { path: 'privacypolicy', component: PrivacypolicyComponent },
-  { path: 'sponsors', component: SponsorsComponent },
-  { path: '**', component: HomeComponent }
+  },{ 
+    path: 'verkoopsvoorwaarden', 
+    component: VerkoopsvoorwaardenComponent, 
+    data: { title: 'Verkoopsvoorwaarden' } 
+  },{ 
+    path: 'privacypolicy', 
+    component: PrivacypolicyComponent, 
+    data: { title: 'Privacypolicy' } 
+  },{ 
+    path: 'metdankaan', 
+    component: SponsorsComponent, 
+    data: { title: 'Met dank aan' } 
+  },{ 
+    path: 'timetable', 
+    component: TimetableComponent, 
+    data: { title: 'Timetable' } 
+  },{ 
+    path: '**', 
+    component: HomeComponent 
+  }
 ];
 
 @NgModule({

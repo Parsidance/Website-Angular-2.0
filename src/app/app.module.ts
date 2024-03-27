@@ -11,6 +11,7 @@ import { LineupComponent } from './lineup/lineup.component';
 import { AzComponent } from './lineup/az/az.component';
 import { FridayComponent } from './lineup/friday/friday.component';
 import { SaturdayComponent } from './lineup/saturday/saturday.component';
+import { TimetableComponent } from './timetable/timetable.component';
 
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { AboutComponent } from './about/about.component';
@@ -43,6 +44,7 @@ import {CdkAccordionModule} from '@angular/cdk/accordion';
     AzComponent,
     FridayComponent,
     SaturdayComponent,
+    TimetableComponent,
   ],
   imports: [
     BrowserModule,
